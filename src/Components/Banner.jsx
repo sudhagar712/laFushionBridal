@@ -3,7 +3,11 @@ import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import hair from "../assets/images/ban1.mp4"
 import hair2 from "../assets/images/ban2.mp4";
 import hair3 from "../assets/images/ban3.mp4";
-import hair4 from "../assets/images/bride4.mp4";
+import hair4 from "../assets/images/bridewed.mp4";
+import hair5 from "../assets/images/bridewed2.mp4";
+import hair6 from "../assets/images/bride4.mp4";
+
+
 
 
 
@@ -35,6 +39,18 @@ const slides = [
     description:
       "Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Duis at tellus at urna CALISTA's mattis. Viverra tellus in hac habitasse platea dictumst.",
     video: hair4
+  },
+  {
+    title: "Bridal MakeUp",
+    description:
+      "Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Duis at tellus at urna CALISTA's mattis. Viverra tellus in hac habitasse platea dictumst.",
+    video: hair5
+  },
+  {
+    title: "Bridal MakeUp",
+    description:
+      "Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Duis at tellus at urna CALISTA's mattis. Viverra tellus in hac habitasse platea dictumst.",
+    video: hair6
   }
 ];
 
