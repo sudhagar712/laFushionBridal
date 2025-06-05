@@ -5,6 +5,7 @@ import SpaBenefits from '../Components/SpaBenefits'
 import BackToTop from '../Components/BackToTop'
 import ShotOfTheDay from '../Components/ShotOfTheDay'
 import CategoryGrid from '../Components/CategoryGrid'
+import Carousel3D from '../Components/Carousel3D'
 
 
 const LandingPage = () => {
@@ -14,6 +15,7 @@ const LandingPage = () => {
 
       <PhotographySection />
       <CategoryGrid/>
+      <Carousel3D/>
       <ShotOfTheDay />
       <SpaBenefits />
       <BackToTop />
