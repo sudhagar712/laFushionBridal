@@ -1,10 +1,14 @@
 import React from 'react'
+import LandingPage from './Pages/LandingPage'
+import Navbar from './Components/Navbar'
 
 const App = () => {
   return (
-    <div className="bg-red-300">
-      hii
-    </div>
+    <>
+  <Navbar/>
+  <LandingPage/>
+     
+    </>
   )
 }
 
