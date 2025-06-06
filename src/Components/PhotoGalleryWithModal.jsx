@@ -40,7 +40,7 @@ const PhotoGalleryWithModal = () => {
     <section className="py-5 mt-5">
       <div className="text-center mb-10">
         <h3
-          className="text-6xl text-yellow-300 font-[Great Vibes] mb-2"
+          className="text-2xl text-yellow-300 font-[Great Vibes] mb-2"
           style={{ fontFamily: "'Great Vibes', cursive" }}
         >
           Our Latest Collections
@@ -48,7 +48,7 @@ const PhotoGalleryWithModal = () => {
       </div>
 
       {/* Responsive Image Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-1 max-w-7xl mx-auto">
         {images.map((img, idx) => (
           <div
             key={idx}

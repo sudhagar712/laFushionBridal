@@ -28,7 +28,7 @@ const PhotographySection = () => {
         {/* Text */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           <h3
-            className="text-6xl text-yellow-300 font-[Great Vibes] mb-2"
+            className="text-3xl md:text-5xl text-yellow-300 font-[Great Vibes] mb-2"
             style={{ fontFamily: "'Great Vibes', cursive" }}
           >
             Bride Makeup
@@ -36,7 +36,7 @@ const PhotographySection = () => {
           <h4 className="text-2xl font-semibold text-gray-800 mb-4 tracking-wide">
             Best Team
           </h4>
-          <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
+          <p className="text-gray-700 leading-relaxed text-[12px] sm:text-lg">
             We pride ourselves in offering the best in pre-wedding photoshoot
             services, wedding photography, and video coverage. Our professional
             staff guarantees each moment is captured with unerring accuracy and

@@ -31,7 +31,7 @@ const CategoryGrid = () => {
     <>
       <div className="text-center mb-10">
         <h3
-          className="text-6xl text-yellow-300 font-[Great Vibes] mb-2"
+          className="text-3xl md:text-6xl text-yellow-300 font-[Great Vibes] mb-2"
           style={{ fontFamily: "'Great Vibes', cursive" }}
         >
           Our Services
