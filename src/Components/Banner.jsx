@@ -8,6 +8,7 @@ import hair8 from "../assets/images/ban4.mp4";
 
 
 
+
 const slides = [
   {
     title: "Bridal Makeup",
@@ -103,8 +104,12 @@ const Banner = () => {
           Shop : 📍{shop}
         </p>
         <a href="tel:+919003545353">
-          <button className="border mt-4 py-2 border-yellow-500 px-4 uppercase text-[10px] md:text-[18px] bg-yellow-500 transition">
-            Book an Appointment
+          <button className="border mt-4 py-2 border-yellow-500 px-6 uppercase text-[10px] md:text-[10px] bg-yellow-500 transition">
+            <span>
+             
+             
+              Book an Appointment
+            </span>
           </button>
         </a>
       </div>

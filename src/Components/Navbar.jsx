@@ -20,7 +20,7 @@ const Navbar = () => {
           <div className="flex items-center gap-5">
             <div>
             <a href="tel:+919003545353">
-            <button className="border bg-yellow-500 mt-1 py-2 px-4 uppercase text-[8px] md:text-[18px] w-fit">
+            <button className="border bg-yellow-500 mt-1 py-2 px-4 uppercase text-[8px] md:text-[12px] w-fit">
                 Let's Connect
               </button>
               </a>
