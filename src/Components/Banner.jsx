@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 
-import hair3 from "../assets/images/ban3.mp4";
+
 import hair4 from "../assets/images/bridewed.mp4";
 import hair5 from "../assets/images/bridewed2.mp4";
-import hair6 from "../assets/images/spalol.mp4";
-
-
 
 
 
@@ -17,12 +14,7 @@ const slides = [
   
 
   
-  {
-    title: "Unisex Saloon ",
-    description:
-      "Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Duis at tellus at urna CALISTA's mattis. Viverra tellus in hac habitasse platea dictumst.",
-    video: hair3
-  },
+
   {
     title: "Bride Makeup",
     description:
@@ -35,12 +27,7 @@ const slides = [
       "Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Duis at tellus at urna CALISTA's mattis. Viverra tellus in hac habitasse platea dictumst.",
     video: hair5
   },
-  {
-    title: "Spa",
-    description:
-      "Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Duis at tellus at urna CALISTA's mattis. Viverra tellus in hac habitasse platea dictumst.",
-    video: hair6
-  }
+
 ];
 
 const Banner = () => {
@@ -50,7 +37,7 @@ const Banner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 4000);
+    }, 7000);
     return () => clearInterval(interval);
   }, [current]);
 
@@ -90,9 +77,11 @@ const Banner = () => {
           {description}
         </p> */}
         <div className="flex gap-5">
-          <button className="border mt-4 py-2 border-yellow-500 px-4 uppercase text-[10px] md:text-md bg-yellow-500  transition">
-            Call us
-          </button>
+          <a href="tel:+919003545353">
+            <button className="border mt-4 py-2 border-yellow-500 px-4 uppercase text-[10px] md:text-md bg-yellow-500 transition">
+              Call us
+            </button>
+          </a>
           <button className="border mt-4 py-2 border-yellow-500 px-4 uppercase text-[10px] md:text-md w-fit">
             Msg on Whatapps
           </button>

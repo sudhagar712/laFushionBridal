@@ -7,6 +7,7 @@ const Navbar = () => {
 
   return (
     <>
+   
       <header className="absolute top-0 left-0 w-full z-50">
         <div className="flex justify-between items-center px-4 py-6 text-white">
           {/* Logo */}

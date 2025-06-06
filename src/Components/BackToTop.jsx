@@ -30,7 +30,7 @@ const BackToTop = () => {
     showButton && (
       <button
         onClick={scrollToTop}
-        className="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-yellow-500 text-white hover:bg-yellow-600 transition duration-300 shadow-lg"
+        className="fixed bottom-20 right-6 z-50 p-3 rounded-full bg-yellow-500 text-white hover:bg-yellow-600 transition duration-300 shadow-lg"
         aria-label="Back to Top"
       >
         <FaArrowUp className="text-xl" />
