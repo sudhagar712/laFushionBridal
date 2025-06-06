@@ -66,7 +66,7 @@ const TestimonialCarousel = () => {
         >
           {testimonials.map((item, idx) => (
             <SwiperSlide key={idx}>
-              <div className="relative bg-white h-[300px] p-6 rounded shadow-md italic pl-24">
+              <div className="relative bg-yellow-400 h-[300px] p-6 rounded shadow-md italic pl-24">
                 <div className="absolute left-6 top-1/2 transform -translate-y-1/2 text-green-600 text-2xl">
                   <i className="fas fa-quote-left"></i>
                 </div>

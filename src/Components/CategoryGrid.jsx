@@ -37,7 +37,7 @@ const CategoryGrid = () => {
           Our Services
         </h3>
       </div>
-      <div className="grid grid-cols-1 px-1 md:px-5 md:grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 px-0 md:px-10 md:grid-cols-4 gap-5">
         {categories.map((category, index) => (
           <div
             key={index}

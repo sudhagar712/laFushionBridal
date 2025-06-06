@@ -10,6 +10,7 @@ import WhatsAppButton from '../Components/WhatsAppButton'
 import PhotoGalleryWithModal from '../Components/PhotoGalleryWithModal'
 import MapLocation from '../Components/MapLocation'
 import TestimonialCarousel from '../Components/TestimonialCarousel'
+import HeroWithImageStrip from '../Components/HeroWithImageStrip'
 
 
 const LandingPage = () => {
@@ -24,10 +25,11 @@ const LandingPage = () => {
       
       <SpaBenefits />
      
-      <ShotOfTheDay />
+      {/* <ShotOfTheDay /> */}
       <hr />
       <TestimonialCarousel/>
       <MapLocation/>
+      {/* <HeroWithImageStrip/> */}
       <WhatsAppButton />
       <BackToTop />
     </div>

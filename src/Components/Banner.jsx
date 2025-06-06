@@ -6,45 +6,42 @@ import hair6 from "../assets/images/saloon1.mp4";
 import hair7 from "../assets/images/ban2.mp4";
 import hair8 from "../assets/images/ban4.mp4";
 
-
-
-
 const slides = [
   {
     title: "Bridal Makeup",
     description:
       "Magnis dis parturient montes nascetur ridiculus mus mauris vitae.",
     video: hair4,
-    shop: "Pondicherry"
+    shop: "Pondicherry",
   },
   {
     title: "Traditional Bridal Makeup",
     description:
       "Magnis dis parturient montes nascetur ridiculus mus mauris vitae.",
     video: hair8,
-    shop: "Pondicherry"
+    shop: "Pondicherry",
   },
   {
     title: "Bridal MakeUp",
     description:
       "Magnis dis parturient montes nascetur ridiculus mus mauris vitae.",
     video: hair5,
-    shop: "Pondicherry"
+    shop: "Pondicherry",
   },
   {
     title: "Saloon SPA",
     description:
       "Magnis dis parturient montes nascetur ridiculus mus mauris vitae.",
     video: hair6,
-    shop: "Pondicherry"
+    shop: "Pondicherry",
   },
   {
     title: "HairCut",
     description:
       "Magnis dis parturient montes nascetur ridiculus mus mauris vitae.",
     video: hair7,
-    shop: "Pondicherry"
-  }
+    shop: "Pondicherry",
+  },
 ];
 
 const Banner = () => {
@@ -71,7 +68,7 @@ const Banner = () => {
   const { title, video, shop } = slides[current];
 
   return (
-    <section className="relative w-full md:h-screen h-[370px] overflow-hidden">
+    <section className="relative w-full md:h-screen h-[270px] overflow-hidden">
       {/* Video background */}
       <div className="absolute inset-0 w-full h-full z-0">
         {loading && (
@@ -97,34 +94,30 @@ const Banner = () => {
 
       {/* Content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4">
-        <h1 className="text-[15px] sm:text-4xl md:text-7xl text-yellow-500 font-serif font-bold mb-6">
+        <h1 className="text-[12px] sm:text-4xl md:text-7xl text-yellow-500 font-serif font-bold mb-2">
           {title}
         </h1>
-        <p className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl mb-10">
+        <p className="max-w-2xl mx-auto text-[12px] md:text-xl mb-5">
           Shop : 📍{shop}
         </p>
         <a href="tel:+919003545353">
-          <button className="border mt-4 py-2 border-yellow-500 px-6 uppercase text-[10px] md:text-[10px] bg-yellow-500 transition">
-            <span>
-             
-             
-              Book an Appointment
-            </span>
+          <button className="border  py-2 border-yellow-500 px-5 uppercase text-[9px] md:text-[10px] bg-yellow-500 transition">
+            <span>Book an Appointment</span>
           </button>
         </a>
       </div>
 
-      {/* Controls */}
+      {/* Controls - Hidden on mobile screens */}
       <button
         onClick={prevSlide}
-        className="absolute left-5 bottom-8 text-white z-20 text-2xl"
+        className="hidden md:block absolute left-5 bottom-8 text-white z-20 text-2xl"
         aria-label="Previous Slide"
       >
         <FiArrowLeft />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-5 bottom-8 text-white z-20 text-2xl"
+        className="hidden md:block absolute right-5 bottom-8 text-white z-20 text-2xl"
         aria-label="Next Slide"
       >
         <FiArrowRight />
