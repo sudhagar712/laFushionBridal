@@ -28,8 +28,8 @@ const shots = [
 const ShotOfTheDay = () => {
   return (
     <section className="py-4 md:flex md:mt-[70px] md:mb-[90px] ">
-      <h2 className="text-yellow-400 md:flex md:items-center  mt-6  text-5xl md:text-7xl font-cursive text-center mb-12 drop-shadow-md">
-        Shot Of The Day
+      <h2 className="text-yellow-400 md:flex md:items-center  mt-6  text-3xl md:text-4xl font-cursive text-center mb-12 drop-shadow-md">
+        Shot Of The Day :)
       </h2>
 
       <div className="max-w-9xl   grid gap-3 sm:grid-cols-4  place-items-center">
