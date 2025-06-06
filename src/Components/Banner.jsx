@@ -79,12 +79,10 @@ const Banner = () => {
         <div className="flex gap-5">
           <a href="tel:+919003545353">
             <button className="border mt-4 py-2 border-yellow-500 px-4 uppercase text-[10px] md:text-[18px] bg-yellow-500 transition">
-              Call us
+              Book an Appointement
             </button>
           </a>
-          <button className="border mt-4 py-2 border-yellow-500 px-4 uppercase text-[10px] md:text-[18px] w-fit">
-            Msg on Whatapps
-          </button>
+        
         </div>
       </div>
 
