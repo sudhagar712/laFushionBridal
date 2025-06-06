@@ -26,7 +26,7 @@ const ShotOfTheDay = () => {
         Shot Of The Day
       </h2>
 
-      <div className="max-w-2xl mx-auto grid gap-10 sm:grid-cols-2 lg:grid-cols-3 place-items-center">
+      <div className="max-w-6xl  grid gap-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center">
         {shots.map((shot, index) => (
           <div key={index} className="text-center">
             <img
