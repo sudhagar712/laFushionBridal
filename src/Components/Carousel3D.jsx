@@ -24,7 +24,7 @@ const Carousel3D = () => {
       <h2 className="text-yellow-400  text-3xl md:text-6xl font-cursive text-center mb-12 drop-shadow-md">
       Our Services
       </h2>
-      <div className="max-w-8xl mx-auto relative">
+      <div className="md:max-w-6xl  mx-auto relative">
         <Swiper
           modules={[Pagination, EffectCoverflow]}
           effect="coverflow"

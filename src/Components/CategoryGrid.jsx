@@ -28,28 +28,38 @@ const categories = [
 
 const CategoryGrid = () => {
   return (
-    <div className="grid grid-cols-1 px-5  md:grid-cols-2 gap-2">
-      {categories.map((category, index) => (
-        <div
-          key={index}
-          className="relative group h-[600px] overflow-hidden cursor-pointer"
+    <>
+      <div className="text-center mb-10">
+        <h3
+          className="text-6xl text-yellow-300 font-[Great Vibes] mb-2"
+          style={{ fontFamily: "'Great Vibes', cursive" }}
         >
-          <video
-            src={category.video}
-            className="w-full h-full object-cover"
-            autoPlay
-            loop
-            muted
-            playsInline
-          />
-          <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
-            <h2 className="text-white text-xl font-bold uppercase text-center">
-              {category.title}
-            </h2>
+          Our Services
+        </h3>
+      </div>
+      <div className="grid grid-cols-1 px-1 md:px-5 md:grid-cols-2 gap-2">
+        {categories.map((category, index) => (
+          <div
+            key={index}
+            className="relative group h-[600px] overflow-hidden cursor-pointer"
+          >
+            <video
+              src={category.video}
+              className="w-full h-full object-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+              <h2 className="text-white text-xl font-bold uppercase text-center">
+                {category.title}
+              </h2>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    </>
   );
 };
 

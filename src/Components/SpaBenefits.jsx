@@ -39,7 +39,7 @@ const benefits = [
 const SpaBenefits = () => {
   return (
     <section
-      className="relative bg-cover bg-center py-16 px-4 text-white"
+      className="relative bg-cover h-[1000px] md:h-[700px] bg-center py-16 px-4  text-white"
       style={{
         backgroundImage: `url(${spabenifts})`
       }}
@@ -47,14 +47,14 @@ const SpaBenefits = () => {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">
         {/* Text Section */}
         <div className="text-center lg:text-left">
-          <h2 className="text-3xl md:text-4xl font-serif font-light leading-snug">
+          <h2 className="text-3xl md:text-5xl font-serif  text-yellow-400 font-light leading-snug">
             Benefits of spa for <br />
             your skin & body
           </h2>
         </div>
 
         {/* Icon Grid */}
-        <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-10 text-center lg:text-left">
+        <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-10  text-center lg:text-left">
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
             return (

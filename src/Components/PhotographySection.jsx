@@ -1,5 +1,5 @@
 import React from "react";
-import coupleImage from "../assets/images/angel.webp";
+import coupleImage from "../assets/images/photos4.jpg";
 
 const PhotographySection = () => {
   return (
@@ -21,7 +21,7 @@ const PhotographySection = () => {
           <img
             src={coupleImage}
             alt="Couple"
-            className="w-full max-w-md rounded shadow-xl transform rotate-[-3deg]"
+            className="w-full  max-w-md rounded-lg shadow-xl  transform rotate-[-3deg]"
           />
         </div>
 

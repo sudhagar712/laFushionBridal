@@ -7,6 +7,8 @@ import ShotOfTheDay from '../Components/ShotOfTheDay'
 import CategoryGrid from '../Components/CategoryGrid'
 import Carousel3D from '../Components/Carousel3D'
 import WhatsAppButton from '../Components/WhatsAppButton'
+import PhotoGalleryWithModal from '../Components/PhotoGalleryWithModal'
+import MapLocation from '../Components/MapLocation'
 
 
 const LandingPage = () => {
@@ -16,10 +18,14 @@ const LandingPage = () => {
 
       <PhotographySection />
       <CategoryGrid />
-      <Carousel3D />
+      <PhotoGalleryWithModal/>
+      {/* <Carousel3D /> */}
+      
       <SpaBenefits />
+     
       <ShotOfTheDay />
-
+      <hr />
+      <MapLocation/>
       <WhatsAppButton />
       <BackToTop />
     </div>
