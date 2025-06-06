@@ -94,14 +94,14 @@ const Banner = () => {
 
       {/* Content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4">
-        <h1 className="text-[12px] sm:text-4xl md:text-7xl text-yellow-500 font-serif font-bold mb-2">
+        <h1 className="text-[12px] sm:text-4xl md:text-6xl text-yellow-500 font-serif font-bold mb-2">
           {title}
         </h1>
-        <p className="max-w-2xl mx-auto text-[12px] md:text-xl mb-5">
-          Shop : 📍{shop}
+        <p className="max-w-2xl mx-auto text-[12px] md:text-[15px] mb-5">
+          {shop}
         </p>
         <a href="tel:+919003545353">
-          <button className="border  py-2 border-yellow-500 px-5 uppercase text-[9px] md:text-[10px] bg-yellow-500 transition">
+          <button className="border  py-2 border-yellow-500 px-5 uppercase text-[9px] md:text-[20px] bg-yellow-500 transition">
             <span>Book an Appointment</span>
           </button>
         </a>

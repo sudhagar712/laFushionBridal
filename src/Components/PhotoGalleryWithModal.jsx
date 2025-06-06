@@ -50,14 +50,17 @@ const PhotoGalleryWithModal = () => {
     <section className="py-8 md:p-10 md:px-10">
       {/* Heading */}
 
-      <div className=" top-10 left-0 w-full whitespace-nowrap z-0 pointer-events-none">
-        <div className="animate-marquee inline-block">
-          <h2 className="text-[20vw] sm:text-[12vw] md:text-[10vw] font-extrabold text-gray-200 uppercase">
-            Good Moments Showcased &nbsp; Good Moments Showcased &nbsp; Good
-            Moments Showcased
-          </h2>
+      <div className="relative overflow-hidden h-[200px] mb-10">
+        <div className="absolute top-0 left-0 w-full whitespace-nowrap z-0 pointer-events-none">
+          <div className="animate-marquee inline-block">
+            <h2 className="text-[20vw] sm:text-[12vw] md:text-[10vw] font-extrabold text-gray-200 uppercase">
+              Good Moments Showcased &nbsp; Good Moments Showcased &nbsp; Good
+              Moments Showcased
+            </h2>
+          </div>
         </div>
       </div>
+
       <div className="text-center mb-10">
         <h3
           className="text-3xl text-yellow-400 font-[Great Vibes]"
@@ -74,11 +77,11 @@ const PhotoGalleryWithModal = () => {
       </div>
 
       {/* Masonry Grid Layout */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-1 auto-rows-[200px] md:auto-rows-[400px]">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-1  auto-rows-[-900px] md:auto-rows-[400px]">
         {images.map((img, idx) => (
           <div
             key={idx}
-            className={`${img.colSpan} ${img.rowSpan} cursor-pointer p-10 overflow-hidden rounded-lg shadow hover:shadow-xl transition duration-300`}
+            className={`${img.colSpan} ${img.rowSpan} cursor-pointer  overflow-hidden rounded-lg shadow hover:shadow-xl transition duration-300`}
             onClick={() => openModal(img.src)}
           >
             <img

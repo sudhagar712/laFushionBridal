@@ -39,12 +39,14 @@ const benefits = [
 const SpaBenefits = () => {
   return (
     <>
-      <div className=" top-10 left-0 w-full whitespace-nowrap z-0 pointer-events-none">
-        <div className="animate-marquee inline-block">
-          <h2 className="text-[20vw] sm:text-[12vw] md:text-[10vw] font-extrabold text-gray-200 uppercase">
-            Good Moments Showcased &nbsp; Good Moments Showcased &nbsp; Good
-            Moments Showcased
-          </h2>
+      <div className="relative overflow-hidden h-[200px] mb-10">
+        <div className="absolute top-0 left-0 w-full whitespace-nowrap z-0 pointer-events-none">
+          <div className="animate-marquee inline-block">
+            <h2 className="text-[20vw] sm:text-[12vw] md:text-[10vw] font-extrabold text-gray-200 uppercase">
+              Good Moments Showcased &nbsp; Good Moments Showcased &nbsp; Good
+              Moments Showcased
+            </h2>
+          </div>
         </div>
       </div>
       <section
