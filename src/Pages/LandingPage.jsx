@@ -9,6 +9,7 @@ import Carousel3D from '../Components/Carousel3D'
 import WhatsAppButton from '../Components/WhatsAppButton'
 import PhotoGalleryWithModal from '../Components/PhotoGalleryWithModal'
 import MapLocation from '../Components/MapLocation'
+import TestimonialCarousel from '../Components/TestimonialCarousel'
 
 
 const LandingPage = () => {
@@ -25,6 +26,7 @@ const LandingPage = () => {
      
       <ShotOfTheDay />
       <hr />
+      <TestimonialCarousel/>
       <MapLocation/>
       <WhatsAppButton />
       <BackToTop />
