@@ -17,18 +17,17 @@ const LandingPage = () => {
   return (
     <div>
       <Banner />
-
       <PhotographySection />
       <CategoryGrid />
-      <PhotoGalleryWithModal/>
+      <PhotoGalleryWithModal />
       {/* <Carousel3D /> */}
-      
-      <SpaBenefits />
-     
+
+      {/* <SpaBenefits /> */}
+
       {/* <ShotOfTheDay /> */}
-      <hr />
-      <TestimonialCarousel/>
-      <MapLocation/>
+     
+      <TestimonialCarousel />
+      <MapLocation />
       {/* <HeroWithImageStrip/> */}
       <WhatsAppButton />
       <BackToTop />

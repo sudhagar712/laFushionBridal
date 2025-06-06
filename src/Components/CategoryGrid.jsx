@@ -29,35 +29,37 @@ const categories = [
 const CategoryGrid = () => {
   return (
     <>
-      <div className="text-center mb-10">
+      <div className="text-center bg-black ">
         <h3
-          className="text-3xl md:text-6xl text-yellow-300 font-[Great Vibes] mb-2"
+          className="text-3xl  md:text-6xl text-yellow-300 font-[Great Vibes] "
           style={{ fontFamily: "'Great Vibes', cursive" }}
         >
           Our Services
         </h3>
       </div>
-      <div className="grid grid-cols-1 px-3 md:px-10 md:grid-cols-4 gap-5">
-        {categories.map((category, index) => (
-          <div
-            key={index}
-            className="relative group h-[500px] overflow-hidden cursor-pointer"
-          >
-            <video
-              src={category.video}
-              className="w-full h-full object-cover"
-              autoPlay
-              loop
-              muted
-              playsInline
-            />
-            <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
-              <h2 className="text-white text-xl font-bold uppercase text-center">
-                {category.title}
-              </h2>
+      <div className="bg-black">
+        <div className="grid  grid-cols-1 px-3 md:px-10 md:grid-cols-4 gap-5">
+          {categories.map((category, index) => (
+            <div
+              key={index}
+              className="relative group h-[500px] overflow-hidden cursor-pointer"
+            >
+              <video
+                src={category.video}
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-40 transition duration-300 flex items-center justify-center">
+                <h2 className="text-white text-xl font-bold uppercase text-center">
+                  {category.title}
+                </h2>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );

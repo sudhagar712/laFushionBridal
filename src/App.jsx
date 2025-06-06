@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./Pages/LandingPage";
 import Navbar from "./Components/Navbar";
 import backgallary from "../src/assets/images/spa2.webp"
@@ -27,8 +28,14 @@ const App = () => {
         </div>
       ) : (
         <>
-          <Navbar />
-          <LandingPage />
+          <BrowserRouter>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<LandingPage/>}/>
+            </Routes>
+          </BrowserRouter>
+
+        
         </>
       )}
     </>

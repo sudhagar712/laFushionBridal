@@ -68,11 +68,11 @@ const Banner = () => {
   const { title, video, shop } = slides[current];
 
   return (
-    <section className="relative w-full md:h-screen h-[270px] overflow-hidden">
+    <section className="relative w-full md:h-screen h-[300px] overflow-hidden">
       {/* Video background */}
-      <div className="absolute inset-0 w-full h-full z-0">
+      <div className="absolute inset-0 bg-black  w-full h-full z-10 mix-blend-multiply">
         {loading && (
-          <div className="absolute inset-0 flex items-center justify-center bg-black/70 z-10">
+          <div className="absolute inset-0 flex items-center justify-center bg-black/60 z-10 backdrop-brightness-50">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-yellow-400"></div>
           </div>
         )}
@@ -93,15 +93,18 @@ const Banner = () => {
       <div className="absolute inset-0 bg-black/50 z-10" />
 
       {/* Content */}
-      <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4">
-        <h1 className="text-[12px] sm:text-4xl md:text-6xl text-yellow-500 font-serif font-bold mb-2">
+      <div className="relative z-20 mt-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
+        <h1 className="text-[16px] sm:text-4xl md:text-6xl text-white font-serif  mb-2">
+          Welcome To LaFusion Bridal
+        </h1>
+        <h1 className="text-[16px] sm:text-3xl md:text-3xl text-white font-serif  mb-2">
           {title}
         </h1>
         <p className="max-w-2xl mx-auto text-[12px] md:text-[15px] mb-5">
           {shop}
         </p>
         <a href="tel:+919003545353">
-          <button className="border  py-2 border-yellow-500 px-5 uppercase text-[9px] md:text-[20px] bg-yellow-500 transition">
+          <button className="border  py-2  px-5 uppercase text-[10px] md:text-[20px]  transition">
             <span>Book an Appointment</span>
           </button>
         </a>

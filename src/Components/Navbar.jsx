@@ -1,81 +1,112 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.png"
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
+  const menuItems = [
+    "Home",
+    "About",
+    "Services",
+    "Makeup",
+    "Contact"
+  ];
+
+  // Scroll detection
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 80) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <>
-      <header className="absolute top-0 left-0 w-full z-50">
-        <div className="flex justify-between items-center px-4 py-3 text-white">
-          {/* Logo */}
+    <header
+      className={`fixed w-full p-1 px-5 top-0 left-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-black/70 backdrop-blur-md shadow-md text-white"
+          : "bg-transparent text-white"
+      }`}
+    >
+      <div className="container  mx-auto  flex items-center justify-between">
+        {/* Logo */}
+        <Link to="/">
+          <img src={logo} alt="" className="w-[30%] md:w-[45%]  mb-2" />
+        </Link>
 
-          <div className="text-[12px] md:text-[20px] font-bold">
-            LaFushion Bridal
-          </div>
-
-          {/* Offcanvas Toggle (Always visible) */}
-
-          <div className="flex items-center gap-5">
-            <div>
-            <a href="tel:+919003545353">
-            <button className="border bg-yellow-500 mt-1  font-bold py-1 px-4 uppercase text-[8px] md:text-[12px] w-fit">
-                Let's Connect
-              </button>
-              </a>
-
-             
-            </div>
-            <button
-              onClick={() => setMenuOpen(true)}
-              className="text-2xl focus:outline-none"
+        {/* Desktop Menu */}
+        <nav className="hidden md:flex gap-10 font-medium">
+          {menuItems.map((item) => (
+            <a
+              key={item}
+              href={`#${item.replace(/\s+/g, "").toLowerCase()}`}
+              className={`hover:text-yellow-500   transition duration-200 ${
+                isScrolled ? "text-white " : "text-white"
+              }`}
             >
-              <FiMenu />
-            </button>
-          </div>
-        </div>
+              {item}
+            </a>
+          ))}
+        </nav>
 
-        {/* Offcanvas Menu */}
-        <div
-          className={`fixed top-0 right-0 h-full w-[70%] md:w-[50%] bg-white text-gray-500 transform transition-transform duration-300 z-50 ${
-            menuOpen ? "translate-x-0" : "translate-x-full"
-          }`}
+        {/* Mobile Menu Icon */}
+        <button
+          className="md:hidden text-2xl"
+          onClick={() => setMenuOpen(true)}
         >
-          <div className="flex justify-between items-center p-6 border-b border-gray-700">
-            <h2 className="md:text-3xl text-xl  font-semibold">
-              LaFusion Bridal
-            </h2>
-            <button onClick={() => setMenuOpen(false)} className="text-2xl">
-              <FiX />
-            </button>
-          </div>
+          <FiMenu />
+        </button>
+      </div>
 
-          <div className="flex items-center p-10 justify-center">
-            <h1 className="text-sm md:text-xl">
-              <p className="text-yellow-400 text-md md:text-2xl font-bold">
-                Shop Address:
-              </p>{" "}
-              La Fusion Bridal Studio, No. 93, 1st Floor, MG Road Corner & KBSN
-              Kofi Bar Upstairs, Vysial St, Puducherry, 605001
-            </h1>
+      {/* Mobile Offcanvas Menu */}
+      <div
+        className={`fixed top-0 right-0 h-full w-[70%] sm:w-[50%] bg-white text-gray-800 transform transition-transform duration-300 z-50 ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex justify-between items-center p-4 border-b">
+          <div className="text-xl font-bold">
+            <span className="text-yellow-500">LaFusion</span> Bridal
           </div>
-          <div className="flex flex-col p-10 ">
-            <p>Lakshmi</p>
-            <p className="text-yellow-400 font-bold">Contact:&nbsp; </p>
-            <span> 9003545353</span>
-          </div>
+          <button
+            onClick={() => setMenuOpen(false)}
+            className="text-2xl text-gray-600"
+          >
+            <FiX />
+          </button>
         </div>
 
-        {/* Overlay */}
-        {menuOpen && (
-          <div
-            className="fixed inset-0 bg-black/50 z-40"
-            onClick={() => setMenuOpen(false)}
-          />
-        )}
-      </header>
-    </>
+        <nav className="flex flex-col p-6 gap-4 font-medium">
+          {menuItems.map((item) => (
+            <a
+              key={item}
+              href={`#${item.replace(/\s+/g, "").toLowerCase()}`}
+              className="hover:text-yellow-500"
+              onClick={() => setMenuOpen(false)}
+            >
+              {item}
+            </a>
+          ))}
+        </nav>
+      </div>
+
+      {/* Overlay */}
+      {menuOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 z-40"
+          onClick={() => setMenuOpen(false)}
+        ></div>
+      )}
+    </header>
   );
 };
 
