@@ -44,7 +44,7 @@ const Navbar = () => {
         >
           <div className="flex justify-between items-center p-6 border-b border-gray-700">
             <h2 className="md:text-3xl text-xl  font-semibold">
-              LaFusion Bridal{" "}
+              LaFusion Bridal
             </h2>
             <button onClick={() => setMenuOpen(false)} className="text-2xl">
               <FiX />
@@ -60,7 +60,8 @@ const Navbar = () => {
               Kofi Bar Upstairs, Vysial St, Puducherry, 605001
             </h1>
           </div>
-          <div className="flex items-center p-10 justify-center">
+          <div className="flex flex-col p-10 ">
+            <p>Lakshmi</p>
             <p className="text-yellow-400 font-bold">Contact:&nbsp; </p>
             <span> 9003545353</span>
           </div>

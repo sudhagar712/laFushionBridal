@@ -1,7 +1,7 @@
 import React from "react";
 import cat1 from "../assets/images/saloon1.mp4"
 import cat2 from "../assets/images/bridewed.mp4";
-import cat3 from "../assets/images/spalol.mp4";
+import cat3 from "../assets/images/spanew.mp4";
 import cat4 from "../assets/images/haircut.mp4";
 
 
@@ -9,7 +9,7 @@ import cat4 from "../assets/images/haircut.mp4";
 
 const categories = [
   {
-    title: "Saloon",
+    title: "UniSex Saloon",
     video: cat1
   },
   {
@@ -37,11 +37,11 @@ const CategoryGrid = () => {
           Our Services
         </h3>
       </div>
-      <div className="grid grid-cols-1 px-0 md:px-10 md:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 px-3 md:px-10 md:grid-cols-4 gap-5">
         {categories.map((category, index) => (
           <div
             key={index}
-            className="relative group h-[600px] overflow-hidden cursor-pointer"
+            className="relative group h-[500px] overflow-hidden cursor-pointer"
           >
             <video
               src={category.video}

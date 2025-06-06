@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 
 const testimonials = [
   {
-    text: "A great salon with excellent amenities it offers. The ambiance is delightful, and the skillful owner truly elevates the entire experience. His expertise is undoubtedly the key to the salon's success. Highly recommended!",
+    text: "A great salon with excellent amenities it offers. The ambiance is delightful, and the skillful owner truly elevates the entire experience.",
     name: "Sudhagar",
     role: "Happy Client"
   },
@@ -17,7 +17,7 @@ const testimonials = [
     role: "Happy Client"
   },
   {
-    text: "Ambience super 👍🏻 location 🥲 atmosphere 🌟Very good service and satisfaction ✅ friendliness advise with kindness... Nambi vaanga santhosama ponga 👍🏻💥🤞🏻❣️",
+    text: "Ambience super 👍🏻 location 🥲 atmosphere  ✅ friendliness advise with kindness... Nambi vaanga santhosama ponga 👍🏻💥🤞🏻❣️",
     name: "Revathi",
     role: "Happy Client"
   },
@@ -51,7 +51,7 @@ const TestimonialCarousel = () => {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-4">
         <Swiper
           modules={[Pagination, Autoplay]}
           spaceBetween={30}
@@ -66,7 +66,7 @@ const TestimonialCarousel = () => {
         >
           {testimonials.map((item, idx) => (
             <SwiperSlide key={idx}>
-              <div className="relative bg-yellow-100 h-[300px] p-6 rounded shadow-md italic pl-24">
+              <div className="relative bg-yellow-400 h-[200px] p-6 rounded shadow-xl italic pl-24">
                 <div className="absolute left-6 top-1/2 transform -translate-y-1/2 text-green-600 text-2xl">
                   <i className="fas fa-quote-left"></i>
                 </div>

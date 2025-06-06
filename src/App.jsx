@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import LandingPage from "./Pages/LandingPage";
 import Navbar from "./Components/Navbar";
-// import Detailsnav from './Components/Detailsnav';
+import backgallary from "../src/assets/images/spa2.webp"
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -17,20 +17,13 @@ const App = () => {
   return (
     <>
       {loading ? (
-        <div className="loading h-screen flex flex-col items-center justify-center bg-white">
-          <div id="preloader">
-            <div className="spinner flex gap-2">
-              <span className="ball-1 w-4 h-4 bg-black rounded-full animate-bounce" />
-              <span className="ball-2 w-4 h-4 bg-black rounded-full animate-bounce delay-100" />
-              <span className="ball-3 w-4 h-4 bg-black rounded-full animate-bounce delay-200" />
-              <span className="ball-4 w-4 h-4 bg-black rounded-full animate-bounce delay-300" />
-              <span className="ball-5 w-4 h-4 bg-black rounded-full animate-bounce delay-400" />
-              <span className="ball-6 w-4 h-4 bg-black rounded-full animate-bounce delay-500" />
-              <span className="ball-7 w-4 h-4 bg-black rounded-full animate-bounce delay-600" />
-              <span className="ball-8 w-4 h-4 bg-black rounded-full animate-bounce delay-700" />
-            </div>
-            <h2 className="mt-4 text-xl font-extrabold text-yellow-400">Loading..</h2>
-          </div>
+        <div
+          className="loading h-screen w-screen bg-cover bg-center flex flex-col items-center justify-center"
+          style={{ backgroundImage: `url(${backgallary})` }}
+        >
+          <h2 className="text-4xl font-bold text-white drop-shadow-lg animate-pulse">
+            Loading...
+          </h2>
         </div>
       ) : (
         <>
