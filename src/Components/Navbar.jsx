@@ -9,16 +9,16 @@ const Navbar = () => {
     <>
    
       <header className="absolute top-0 left-0 w-full z-50">
-        <div className="flex justify-between items-center px-4 py-6 text-white">
+        <div className="flex justify-between items-center px-4 py-3 text-white">
           {/* Logo */}
          
-          <div className="text-xl font-bold">LaFushion Bridal</div>
+          <div className="text-[12px] md:text-[20px] font-bold">LaFushion Bridal</div>
 
           {/* Offcanvas Toggle (Always visible) */}
 
           <div className="flex items-center gap-5">
             <div>
-              <button className="border bg-yellow-500 mt-1 py-2 px-4 uppercase text-[10px] md:text-md w-fit">
+              <button className="border bg-yellow-500 mt-1 py-2 px-4 uppercase text-[8px] md:text-[18px] w-fit">
                 Let's Connect
               </button>
             </div>

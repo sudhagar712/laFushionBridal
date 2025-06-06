@@ -1,20 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
-
-
 import hair4 from "../assets/images/bridewed.mp4";
 import hair5 from "../assets/images/bridewed2.mp4";
 
 
-
-
-
-
 const slides = [
-  
-
-  
-
   {
     title: "Bride Makeup",
     description:
@@ -52,7 +42,7 @@ const Banner = () => {
   const { title, video } = slides[current];
 
   return (
-    <section className="relative w-full h-screen overflow-hidden">
+    <section className="relative w-full md:h-screen h-[400px]  overflow-hidden">
       {/* Background Video */}
       <div className="absolute inset-0 w-full h-full z-0">
         <video
@@ -70,7 +60,7 @@ const Banner = () => {
 
       {/* Slide Content */}
       <div className="relative z-20 flex flex-col items-center justify-center h-full text-center text-white px-4">
-        <h1 className="text-3xl sm:text-4xl md:text-7xl text-yellow-500 font-serif font-bold mb-6">
+        <h1 className="text-[15px] sm:text-4xl md:text-7xl text-yellow-500 font-serif font-bold mb-6">
           {title}
         </h1>
         {/* <p className="max-w-2xl mx-auto text-base sm:text-lg md:text-xl mb-10">

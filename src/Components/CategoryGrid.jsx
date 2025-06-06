@@ -2,6 +2,8 @@ import React from "react";
 import cat1 from "../assets/images/saloon1.mp4"
 import cat2 from "../assets/images/bridewed.mp4";
 import cat3 from "../assets/images/spalol.mp4";
+import cat4 from "../assets/images/haircut.mp4";
+
 
 
 
@@ -17,12 +19,16 @@ const categories = [
   {
     title: "Spa",
     video: cat3
+  },
+  {
+    title: "haircut",
+    video: cat4
   }
 ];
 
 const CategoryGrid = () => {
   return (
-    <div className="grid grid-cols-1 px-5 sm:grid-cols-2 md:grid-cols-3 gap-2">
+    <div className="grid grid-cols-1 px-5  md:grid-cols-2 gap-2">
       {categories.map((category, index) => (
         <div
           key={index}

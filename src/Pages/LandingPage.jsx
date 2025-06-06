@@ -15,11 +15,12 @@ const LandingPage = () => {
       <Banner />
 
       <PhotographySection />
-      <CategoryGrid/>
-      <Carousel3D/>
-      <ShotOfTheDay />
+      <CategoryGrid />
+      <Carousel3D />
       <SpaBenefits />
-     <WhatsAppButton/>
+      <ShotOfTheDay />
+
+      <WhatsAppButton />
       <BackToTop />
     </div>
   );

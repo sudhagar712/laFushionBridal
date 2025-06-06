@@ -6,7 +6,7 @@ import Detailsnav from './Components/Detailsnav'
 const App = () => {
   return (
     <>
-    <Detailsnav/>
+    {/* <Detailsnav/> */}
   <Navbar/>
   <LandingPage/>
 
