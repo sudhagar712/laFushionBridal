@@ -3,6 +3,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./Pages/LandingPage";
 import Navbar from "./Components/Navbar";
 import backgallary from "../src/assets/images/spa2.webp"
+import BridalPage from "./Pages/BridalPage";
+import Makeup from "./Pages/Makeup";
+import { MdContactPage } from "react-icons/md";
+import ContactForm from "./Pages/ContactPage";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -31,11 +35,12 @@ const App = () => {
           <BrowserRouter>
             <Navbar />
             <Routes>
-              <Route path="/" element={<LandingPage/>}/>
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/bridalCollections" element={<BridalPage />} />
+              <Route path="/Makeup" element={<Makeup />} />
+              <Route path="/contact" element={<ContactForm/>} />
             </Routes>
           </BrowserRouter>
-
-        
         </>
       )}
     </>

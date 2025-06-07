@@ -36,7 +36,7 @@ const testimonials = [
 
 const TestimonialCarousel = () => {
   return (
-    <div className="bg-black text-white">
+    <>
       <section className="py-20 ">
         <div className="text-center mb-12">
           <h3
@@ -47,7 +47,7 @@ const TestimonialCarousel = () => {
           </h3>
           <div className="flex justify-center mt-4 items-center gap-2">
             <span className="w-10 h-1 bg-yellow-400 rounded"></span>
-            <span className="w-8 h-1 bg-black rounded"></span>
+            <span className="w-8 h-1 bg-yellow-400 rounded"></span>
             <span className="w-10 h-1 bg-yellow-400 rounded"></span>
           </div>
         </div>
@@ -67,7 +67,7 @@ const TestimonialCarousel = () => {
           >
             {testimonials.map((item, idx) => (
               <SwiperSlide key={idx}>
-                <div className="relative bg-yellow-400 h-[200px] p-6 rounded shadow-xl italic pl-24">
+                <div className="relative bg-white h-[200px] p-6 rounded shadow-xl italic pl-24">
                   <div className="absolute left-6 top-1/2 transform -translate-y-1/2 text-green-600 text-2xl">
                     <i className="fas fa-quote-left"></i>
                   </div>
@@ -79,7 +79,7 @@ const TestimonialCarousel = () => {
           </Swiper>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 
 const MapLocation = () => {
   return (
-    <div className="bg-black text-white">
+    <>
       <section className="px-4 py-10  ">
         <div className="text-center">
           <h2 className="text-yellow-400    text-3xl md:text-6xl font-cursive text-center mb-12 drop-shadow-md">
@@ -25,13 +25,13 @@ const MapLocation = () => {
             ></iframe>
           </div>
 
-          <p className="text-center text-white mt-10 text-md ">
+          <p className="text-center mt-10 text-md ">
             La Fusion Bridal Studio, No. 93, 1st Floor, MG Road Corner & KBSN
             Kofi Bar Upstairs, Vysial St, Puducherry, 605001
           </p>
         </div>
       </section>
-    </div>
+    </>
   );
 };
 

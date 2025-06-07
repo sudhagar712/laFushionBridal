@@ -47,7 +47,7 @@ const PhotoGalleryWithModal = () => {
   }, []);
 
   return (
-    <div className="bg-black text-white">
+    <>
       <section className="py-8 md:p-10 md:px-10">
         {/* Heading */}
 
@@ -64,7 +64,7 @@ const PhotoGalleryWithModal = () => {
 
         <div className="text-center mb-10">
           <h3
-            className="text-3xl text-yellow-400 font-[Great Vibes]"
+            className="text-5xl text-yellow-400 font-[Great Vibes]"
             style={{ fontFamily: "'Great Vibes', cursive" }}
           >
             Our Latest Collections
@@ -120,7 +120,7 @@ const PhotoGalleryWithModal = () => {
           </div>
         )}
       </section>
-    </div>
+    </>
   );
 };
 

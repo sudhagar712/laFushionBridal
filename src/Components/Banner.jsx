@@ -68,7 +68,7 @@ const Banner = () => {
   const { title, video, shop } = slides[current];
 
   return (
-    <section className="relative w-full md:h-screen h-[300px] overflow-hidden">
+    <section className="relative w-full md:h-[100vh] h-[300px] overflow-hidden ">
       {/* Video background */}
       <div className="absolute inset-0 bg-black  w-full h-full z-10 mix-blend-multiply">
         {loading && (
@@ -97,14 +97,14 @@ const Banner = () => {
         <h1 className="text-[16px] sm:text-4xl md:text-6xl text-white font-serif  mb-2">
           Welcome To LaFusion Bridal
         </h1>
-        <h1 className="text-[16px] sm:text-3xl md:text-3xl text-white font-serif  mb-2">
+        <h1 className="text-[16px] sm:text-3xl md:text-3xl text-yellow-400 font-serif  mb-2">
           {title}
         </h1>
         <p className="max-w-2xl mx-auto text-[12px] md:text-[15px] mb-5">
           {shop}
         </p>
         <a href="tel:+919003545353">
-          <button className="border  py-2  px-5 uppercase text-[10px] md:text-[20px]  transition">
+          <button className="border-2 border-yellow-400  py-2   px-5 uppercase text-[10px] md:text-[20px]  transition">
             <span>Book an Appointment</span>
           </button>
         </a>

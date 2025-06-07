@@ -1,5 +1,5 @@
 import React from "react";
-import cat1 from "../assets/images/saloon1.mp4"
+
 import cat2 from "../assets/images/bridewed.mp4";
 import cat3 from "../assets/images/spanew.mp4";
 import cat4 from "../assets/images/haircut.mp4";
@@ -8,10 +8,7 @@ import cat4 from "../assets/images/haircut.mp4";
 
 
 const categories = [
-  {
-    title: "UniSex Saloon",
-    video: cat1
-  },
+ 
   {
     title: "Bride Makeup",
     video: cat2
@@ -29,16 +26,16 @@ const categories = [
 const CategoryGrid = () => {
   return (
     <>
-      <div className="text-center bg-black ">
+      <div className="text-center  ">
         <h3
-          className="text-3xl  md:text-6xl text-yellow-300 font-[Great Vibes] "
+          className="text-3xl  md:text-5xl mb-10 text-yellow-300 font-[Great Vibes] "
           style={{ fontFamily: "'Great Vibes', cursive" }}
         >
           Our Services
         </h3>
       </div>
-      <div className="bg-black">
-        <div className="grid  grid-cols-1 px-3 md:px-10 md:grid-cols-4 gap-5">
+      <div className="">
+        <div className="grid  grid-cols-1 px-3 md:px-15 md:grid-cols-3 gap-10">
           {categories.map((category, index) => (
             <div
               key={index}

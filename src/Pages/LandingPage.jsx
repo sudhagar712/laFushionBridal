@@ -11,6 +11,7 @@ import PhotoGalleryWithModal from '../Components/PhotoGalleryWithModal'
 import MapLocation from '../Components/MapLocation'
 import TestimonialCarousel from '../Components/TestimonialCarousel'
 import HeroWithImageStrip from '../Components/HeroWithImageStrip'
+import FaqAccordion from '../Components/FaqAccordion'
 
 
 const LandingPage = () => {
@@ -25,6 +26,8 @@ const LandingPage = () => {
       {/* <SpaBenefits /> */}
 
       {/* <ShotOfTheDay /> */}
+
+      <FaqAccordion/>
      
       <TestimonialCarousel />
       <MapLocation />
