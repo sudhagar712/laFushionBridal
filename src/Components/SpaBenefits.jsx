@@ -39,7 +39,7 @@ const benefits = [
 const SpaBenefits = () => {
   return (
     <>
-      <div className="relative overflow-hidden h-[200px] mb-10">
+      <div className="relative overflow-hidden h-[100px] mb-10">
         <div className="absolute top-0 left-0 w-full whitespace-nowrap z-0 pointer-events-none">
           <div className="animate-marquee inline-block">
             <h2 className="text-[20vw] sm:text-[12vw] md:text-[10vw] font-extrabold text-gray-200 uppercase">
@@ -50,7 +50,7 @@ const SpaBenefits = () => {
         </div>
       </div>
       <section
-        className="relative bg-cover h-[1000px] md:h-[700px] bg-center py-16 px-4  text-white"
+        className="relative bg-cover min-h-screen md:h-[700px] bg-center py-16 px-4  text-white"
         style={{
           backgroundImage: `url(${spabenifts})`
         }}
