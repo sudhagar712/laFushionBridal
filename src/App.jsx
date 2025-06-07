@@ -7,6 +7,7 @@ import Makeup from "./Pages/Makeup";
 import ContactForm from "./Pages/ContactPage";
 import loadingVideo from "./assets/images/bridemaster2.mp4";
 import SaloonPage from "./Pages/SaloonPage";
+import Spapages from "./Pages/Spapages";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -61,6 +62,7 @@ const App = () => {
               element={<BridalPage />}
             />
             <Route path="/services/saloon" element={<SaloonPage/>}/>
+            <Route path="/services/spa" element={<Spapages/>}/>
             <Route path="/Makeup" element={<Makeup />} />
             <Route path="/contact" element={<ContactForm />} />
           </Routes>

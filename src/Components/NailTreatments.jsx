@@ -26,14 +26,14 @@ const treatments = [
 
 const NailTreatments = () => {
   return (
-    <section className="bg-yellow-50 py-10 px-1 ">
+    <section className="bg-blue-100 py-10 px-1 ">
       <div className="flex flex-col md:flex-row items-center gap-10">
         {/* Left Image */}
         <div className="md:w-1/2">
           <img
             src={nailImage}
             alt="Nail Treatments"
-            className="rounded-lg w-full h-[300px] object-cover"
+            className="rounded-lg w-full h-[400px] object-cover"
           />
         </div>
 

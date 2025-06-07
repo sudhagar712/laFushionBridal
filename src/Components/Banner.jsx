@@ -95,7 +95,7 @@ const Banner = () => {
       {/* Content */}
       <div className="relative z-20 mt-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
         <h1 className="text-[16px] sm:text-4xl md:text-6xl text-white font-serif  mb-2">
-          Welcome To LaFusion Bridal
+          Welcome To laFusion Bridal
         </h1>
         <h1 className="text-[16px] sm:text-3xl md:text-3xl text-yellow-400 font-serif  mb-2">
           {title}
@@ -104,7 +104,7 @@ const Banner = () => {
           {shop}
         </p>
         <a href="tel:+919003545353">
-          <button className="border-2 border-yellow-400  py-2   px-5 uppercase text-[10px] md:text-[20px]  transition">
+          <button className="border-2 border-yellow-400  py-2 bg-yellow-400   px-5 uppercase text-[10px] md:text-[20px]  transition">
             <span>Book an Appointment</span>
           </button>
         </a>

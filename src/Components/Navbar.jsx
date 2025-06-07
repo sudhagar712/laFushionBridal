@@ -92,17 +92,17 @@ const Navbar = () => {
 
       {/* Mobile Offcanvas Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-[70%] sm:w-[50%] bg-white text-gray-800 transform transition-transform duration-300 z-50 ${
+        className={`fixed top-0 right-0 h-full w-[90%] sm:w-[50%] bg-black bg-opacity-60 backdrop-blur-md text-white transform transition-transform duration-300 z-50 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex justify-between items-center p-4 border-b">
+        <div className="flex justify-between items-center p-4 border-b border-white">
           <div className="text-xl font-bold">
             <span className="text-yellow-500">LaFusion</span> Bridal
           </div>
           <button
             onClick={() => setMenuOpen(false)}
-            className="text-2xl text-gray-600"
+            className="text-2xl text-white"
           >
             <FiX />
           </button>
@@ -112,25 +112,25 @@ const Navbar = () => {
           {menuItems.map((item) =>
             item.name === "Services" ? (
               <div className="flex flex-col" key={item.name}>
-                <span className="font-semibold text-yellow-600">Services</span>
+                <span className="font-semibold text-yellow-500">Services</span>
                 <Link
                   to="/services/bridalcollections"
                   onClick={() => setMenuOpen(false)}
-                  className="pl-4 py-1 hover:text-yellow-500"
+                  className="pl-4 py-1 hover:text-yellow-400"
                 >
                   Bridal Collections
                 </Link>
                 <Link
                   to="/services/saloon"
                   onClick={() => setMenuOpen(false)}
-                  className="pl-4 py-1 hover:text-yellow-500"
+                  className="pl-4 py-1 hover:text-yellow-400"
                 >
                   Saloon
                 </Link>
                 <Link
                   to="/services/spa"
                   onClick={() => setMenuOpen(false)}
-                  className="pl-4 py-1 hover:text-yellow-500"
+                  className="pl-4 py-1 hover:text-yellow-400"
                 >
                   SPA
                 </Link>
@@ -140,7 +140,7 @@ const Navbar = () => {
                 key={item.name}
                 to={item.path}
                 onClick={() => setMenuOpen(false)}
-                className="hover:text-yellow-500"
+                className="hover:text-yellow-400"
               >
                 {item.name}
               </Link>

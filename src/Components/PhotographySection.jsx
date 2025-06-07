@@ -158,7 +158,7 @@ const PhotographySection = () => {
               perfection, you’ll walk down the aisle with confidence and grace,
               looking radiant from every angle.
             </p>
-            <Link to="">
+            <Link to="/services/spa">
               <button className="bg-yellow-300 border-2 border-white p-3 px-4  mt-3">
                 Show More
               </button>

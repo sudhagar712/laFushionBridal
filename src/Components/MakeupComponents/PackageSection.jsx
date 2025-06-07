@@ -54,7 +54,7 @@ const packages = [
 
 const PackageSection = () => {
   return (
-    <section className="py-12 px-4  bg-yellow-50 text-center">
+    <section className="py-12 px-4  bg-blue-100 text-center">
       <h3 className="text-sm uppercase text-yellow-400 font-semibold mb-2">
         Pricing Package
       </h3>

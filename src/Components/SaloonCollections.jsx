@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
-// Import local videos
 import menhaircut from "../assets/images/menhaircut.mp4";
 import menbeard from "../assets/images/menbeard.mp4";
+import women1 from "../assets/images/womencut.mp4";
+import women2 from "../assets/images/womencut2.mp4";
+import kids1 from "../assets/images/kidscut.mp4";
+import kids2 from "../assets/images/haircut.mp4";
+
+
+
 
 const tabs = ["All", "Men", "Women", "Kids"];
 
@@ -11,33 +16,33 @@ const services = {
   Men: [
     {
       title: "Men Haircut",
-      video: menhaircut,
+      video: menhaircut
     },
     {
       title: "Beard Styling",
-      video: menbeard,
-    },
+      video: menbeard
+    }
   ],
   Women: [
     {
       title: "Women Haircut",
-      video: "https://www.w3schools.com/html/mov_bbb.mp4",
+      video: women1
     },
     {
       title: "Hair Coloring",
-      video: "https://www.w3schools.com/html/movie.mp4",
-    },
+      video: women2
+    }
   ],
   Kids: [
     {
       title: "Kids Haircut",
-      video: "https://www.w3schools.com/html/mov_bbb.mp4",
+      video: kids1
     },
     {
       title: "Cute Styling",
-      video: "https://www.w3schools.com/html/movie.mp4",
-    },
-  ],
+      video: kids2
+    }
+  ]
 };
 
 const TabServiceComponent = () => {
