@@ -41,7 +41,7 @@ const Navbar = () => {
           {menuItems.map((item) =>
             item.name === "Services" ? (
               <div className="relative group" key={item.name}>
-                <span className="hover:text-yellow-500 cursor-pointer transition duration-200">
+                <span className="hover:text-yellow-500   cursor-pointer transition duration-200">
                   {item.name}
                 </span>
                 <div
@@ -50,8 +50,8 @@ const Navbar = () => {
                   transition-all duration-300 ease-out z-40"
                 >
                   <Link
-                    to="/bridalcollections"
-                    className="block px-4 py-2 hover:bg-yellow-100"
+                    to="/services/bridalcollections"
+                    className="block px-4 py-2 hover:bg-yellow-100 "
                   >
                     Bridal Collections
                   </Link>

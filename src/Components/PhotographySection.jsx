@@ -9,7 +9,7 @@ const PhotographySection = () => {
   return (
     <>
       {/* // bridal sec */}
-      <section className="relative py-20 mt-5  overflow-hidden">
+      <section className="relative md:py-20  mt-[50px]  overflow-hidden">
         {/* Marquee Background */}
         <div className="absolute top-10 left-0 w-full whitespace-nowrap z-0 pointer-events-none">
           <div className="animate-marquee inline-block">
@@ -52,7 +52,7 @@ const PhotographySection = () => {
               perfection, you’ll walk down the aisle with confidence and grace,
               looking radiant from every angle.
             </p>
-            <Link to="/bridalCollections">
+            <Link to="/services/bridalcollections">
               <button className="bg-yellow-300 border-2 border-white p-3 px-4  mt-3">
                 Show More
               </button>
@@ -62,9 +62,9 @@ const PhotographySection = () => {
       </section>
 
       {/* Saloon Cut */}
-      <section className="relative py-20  md:px-20  overflow-hidden">
+      <section className="relative mt-[50px] md:px-20  overflow-hidden">
         {/* Marquee Background */}
-        <div className="absolute top-[200px] left-0 w-full whitespace-nowrap z-0 pointer-events-none">
+        <div className="absolute top-[100px] left-0 w-full whitespace-nowrap z-0 pointer-events-none">
           <div className="animate-marquee inline-block">
             <h2 className="text-[20vw] sm:text-[12vw] md:text-[10vw] font-extrabold text-gray-300 uppercase">
               Good Moments Showcased &nbsp; Good Moments Showcased &nbsp; Good
@@ -74,7 +74,7 @@ const PhotographySection = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-10  flex flex-col lg:flex-row items-center gap-10">
+        <div className="relative z-10 container mx-auto px-10 flex flex-col-reverse lg:flex-row items-center gap-10">
           {/* Text */}
           <div className="w-full lg:w-1/2 md:text-center lg:text-left">
             <h3
@@ -96,7 +96,7 @@ const PhotographySection = () => {
               perfection, you’ll walk down the aisle with confidence and grace,
               looking radiant from every angle.
             </p>
-            <Link to="/bridalCollections">
+            <Link to="">
               <button className="bg-yellow-300 border-2 border-white p-3 px-4  mt-3">
                 Show More
               </button>
@@ -158,7 +158,7 @@ const PhotographySection = () => {
               perfection, you’ll walk down the aisle with confidence and grace,
               looking radiant from every angle.
             </p>
-            <Link to="/bridalCollections">
+            <Link to="">
               <button className="bg-yellow-300 border-2 border-white p-3 px-4  mt-3">
                 Show More
               </button>
