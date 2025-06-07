@@ -37,7 +37,7 @@ const ContactForm = () => {
 
           <div className="flex items-center gap-4">
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919003545353"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-green-600 hover:underline"
@@ -63,7 +63,8 @@ const ContactForm = () => {
             </h2>
             <p>
               <strong>La Fusion Bridal Studio</strong>,<br />
-              No. 93, 1st Floor, MG Road Corner & KBSN Kofi Bar Upstairs,<br />
+              No. 93, 1st Floor, MG Road Corner & KBSN Kofi Bar Upstairs,
+              <br />
               Vysial St, Puducherry, 605001
             </p>
           </div>

@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
+// Import local videos
+import menhaircut from "../assets/images/menhaircut.mp4";
+import menbeard from "../assets/images/menbeard.mp4";
 
 const tabs = ["All", "Men", "Women", "Kids"];
 
@@ -6,33 +11,33 @@ const services = {
   Men: [
     {
       title: "Men Haircut",
-      image: "https://via.placeholder.com/300x200?text=Men+Haircut"
+      video: menhaircut,
     },
     {
       title: "Beard Styling",
-      image: "https://via.placeholder.com/300x200?text=Beard+Styling"
-    }
+      video: menbeard,
+    },
   ],
   Women: [
     {
       title: "Women Haircut",
-      image: "https://via.placeholder.com/300x200?text=Women+Haircut"
+      video: "https://www.w3schools.com/html/mov_bbb.mp4",
     },
     {
       title: "Hair Coloring",
-      image: "https://via.placeholder.com/300x200?text=Hair+Coloring"
-    }
+      video: "https://www.w3schools.com/html/movie.mp4",
+    },
   ],
   Kids: [
     {
       title: "Kids Haircut",
-      image: "https://via.placeholder.com/300x200?text=Kids+Haircut"
+      video: "https://www.w3schools.com/html/mov_bbb.mp4",
     },
     {
       title: "Cute Styling",
-      image: "https://via.placeholder.com/300x200?text=Cute+Styling"
-    }
-  ]
+      video: "https://www.w3schools.com/html/movie.mp4",
+    },
+  ],
 };
 
 const TabServiceComponent = () => {
@@ -46,48 +51,51 @@ const TabServiceComponent = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-10 px-4">
-      <h2 className="text-4xl text-center font-bold mb-8 text-gray-700">
+    <div className="min-h-screen bg-gradient-to-br from-yellow-50 to-white py-16 px-4">
+      <h2 className="text-5xl text-center font-extrabold mb-14 text-gray-800">
         Our Services
       </h2>
 
       {/* Tabs */}
-      <div className="flex justify-center gap-4 mb-10 flex-wrap">
+      <div className="flex justify-center gap-4 mb-12 flex-wrap">
         {tabs.map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-6 py-2 rounded-full border-2 transition duration-300 font-semibold text-sm md:text-base
-              ${
-                activeTab === tab
-                  ? "bg-yellow-400 text-white border-yellow-400"
-                  : "bg-white text-gray-700 border-gray-300 hover:bg-yellow-100"
-              }`}
+            className={`px-6 py-2 rounded-full border-2 transition duration-300 font-semibold text-sm md:text-base ${
+              activeTab === tab
+                ? "bg-yellow-400 text-white border-yellow-400 shadow"
+                : "bg-white text-gray-700 border-gray-300 hover:bg-yellow-100"
+            }`}
           >
             {tab}
           </button>
         ))}
       </div>
 
-      {/* Services */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      {/* Service Cards */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12 max-w-7xl mx-auto">
         {getDisplayedServices().map((service, index) => (
           <div
             key={index}
-            className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+            className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 group"
           >
-            <img
-              src={service.image}
-              alt={service.title}
-              className="w-full h-52 object-cover"
-            />
-            <div className="p-5 flex flex-col items-center justify-between">
-              <h3 className="text-xl font-semibold mb-2 text-gray-800">
+            <div className="overflow-hidden relative rounded-t-3xl">
+              <video
+                src={service.video}
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-[22rem] object-cover transform group-hover:scale-105 transition duration-500 rounded-t-3xl"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-10 transition" />
+            </div>
+            <div className="p-8 backdrop-blur-lg bg-white bg-opacity-90 text-center">
+              <h3 className="text-xl font-bold text-gray-800 mb-5">
                 {service.title}
               </h3>
-              <button className="bg-yellow-400 hover:bg-yellow-500 text-white px-6 py-2 rounded-full font-medium transition">
-                Book Now
-              </button>
+             
             </div>
           </div>
         ))}
