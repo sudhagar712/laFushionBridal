@@ -5,7 +5,8 @@ import Navbar from "./Components/Navbar";
 import BridalPage from "./Pages/BridalPage";
 import Makeup from "./Pages/Makeup";
 import ContactForm from "./Pages/ContactPage";
-import loadingVideo from "./assets/images/bridemastervideo.mp4";
+import loadingVideo from "./assets/images/bridemaster2.mp4";
+import SaloonPage from "./Pages/SaloonPage";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -35,7 +36,7 @@ const App = () => {
         <div className="relative h-screen w-full overflow-hidden">
           {/* ✅ Background Video */}
           <video
-            className="absolute top-0 left-0 w-full h-full object-fit"
+            className="absolute top-0 left-0 w-full h-full object-cover"
             src={loadingVideo}
             autoPlay
             muted
@@ -59,6 +60,7 @@ const App = () => {
               path="/services/bridalcollections"
               element={<BridalPage />}
             />
+            <Route path="/services/saloon" element={<SaloonPage/>}/>
             <Route path="/Makeup" element={<Makeup />} />
             <Route path="/contact" element={<ContactForm />} />
           </Routes>

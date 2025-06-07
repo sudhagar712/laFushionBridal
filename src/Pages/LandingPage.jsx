@@ -3,15 +3,15 @@ import Banner from '../Components/Banner'
 import PhotographySection from '../Components/PhotographySection'
 import SpaBenefits from '../Components/SpaBenefits'
 import BackToTop from '../Components/BackToTop'
-import ShotOfTheDay from '../Components/ShotOfTheDay'
+
 import CategoryGrid from '../Components/CategoryGrid'
 import Carousel3D from '../Components/Carousel3D'
 import WhatsAppButton from '../Components/WhatsAppButton'
 import PhotoGalleryWithModal from '../Components/PhotoGalleryWithModal'
-import MapLocation from '../Components/MapLocation'
+
 import TestimonialCarousel from '../Components/TestimonialCarousel'
-import HeroWithImageStrip from '../Components/HeroWithImageStrip'
 import FaqAccordion from '../Components/FaqAccordion'
+import ContactForm from './ContactPage'
 
 
 const LandingPage = () => {
@@ -23,14 +23,16 @@ const LandingPage = () => {
       <PhotoGalleryWithModal />
       {/* <Carousel3D /> */}
 
-      {/* <SpaBenefits /> */}
+      <SpaBenefits />
+      <hr />
 
       {/* <ShotOfTheDay /> */}
 
       <FaqAccordion/>
      
       <TestimonialCarousel />
-      <MapLocation />
+      <ContactForm/>
+     
       {/* <HeroWithImageStrip/> */}
       <WhatsAppButton />
       <BackToTop />

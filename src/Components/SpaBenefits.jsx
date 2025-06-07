@@ -58,13 +58,13 @@ const SpaBenefits = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 items-center">
           {/* Text Section */}
           <div className="text-center lg:text-left">
-            <h2 className="text-3xl md:text-8xl font-serif  text-yellow-400 font-light leading-snug">
+            <h2 className="text-3xl md:text-5xl font-serif  font-bold text-yellow-400  leading-snug">
               Benefits of spa for your skin & body
             </h2>
           </div>
 
           {/* Icon Grid */}
-          <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-10  text-center lg:text-left">
+          <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-12  text-center lg:text-left">
             {benefits.map((benefit, index) => {
               const Icon = benefit.icon;
               return (
@@ -72,8 +72,8 @@ const SpaBenefits = () => {
                   key={index}
                   className="flex flex-col items-center lg:items-start"
                 >
-                  <Icon className="text-5xl text-white mb-4" />
-                  <h3 className="text-xl font-semibold">{benefit.title}</h3>
+                  <Icon className="text-9xl text-white mb-4" />
+                  <h3 className="text-xl text-yellow-400 font-semibold">{benefit.title}</h3>
                   <p className="text-sm max-w-xs">{benefit.description}</p>
                 </div>
               );

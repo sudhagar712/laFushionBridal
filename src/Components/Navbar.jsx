@@ -15,20 +15,20 @@ const Navbar = () => {
     { name: "Contact", path: "/contact" }
   ];
 
-  // Hide navbar when scrolled
+  // Scroll-based visibility
   useEffect(() => {
     const handleScroll = () => {
       setIsAtTop(window.scrollY <= 0);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header
-      className={`fixed w-full p-1 px-5 top-0 left-0 z-50 transition-all duration-300
-        ${isAtTop ? "bg-transparent text-white" : "hidden"}`}
+      className={`fixed w-full px-5 py-1 top-0 left-0 z-50 transition-all duration-300 ${
+        isAtTop ? "bg-transparent text-white" : "hidden"
+      }`}
     >
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
@@ -37,11 +37,11 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex gap-10 font-medium relative">
+        <nav className="hidden md:flex gap-8 font-medium border-2 border-white p-3 rounded-md">
           {menuItems.map((item) =>
             item.name === "Services" ? (
               <div className="relative group" key={item.name}>
-                <span className="hover:text-yellow-500   cursor-pointer transition duration-200">
+                <span className="hover:text-yellow-500 cursor-pointer transition duration-200">
                   {item.name}
                 </span>
                 <div
@@ -51,7 +51,7 @@ const Navbar = () => {
                 >
                   <Link
                     to="/services/bridalcollections"
-                    className="block px-4 py-2 hover:bg-yellow-100 "
+                    className="block px-4 py-2 hover:bg-yellow-100"
                   >
                     Bridal Collections
                   </Link>
@@ -109,16 +109,43 @@ const Navbar = () => {
         </div>
 
         <nav className="flex flex-col p-6 gap-4 font-medium">
-          {menuItems.map((item) => (
-            <Link
-              key={item.name}
-              to={item.path}
-              onClick={() => setMenuOpen(false)}
-              className="hover:text-yellow-500"
-            >
-              {item.name}
-            </Link>
-          ))}
+          {menuItems.map((item) =>
+            item.name === "Services" ? (
+              <div className="flex flex-col" key={item.name}>
+                <span className="font-semibold text-yellow-600">Services</span>
+                <Link
+                  to="/services/bridalcollections"
+                  onClick={() => setMenuOpen(false)}
+                  className="pl-4 py-1 hover:text-yellow-500"
+                >
+                  Bridal Collections
+                </Link>
+                <Link
+                  to="/services/saloon"
+                  onClick={() => setMenuOpen(false)}
+                  className="pl-4 py-1 hover:text-yellow-500"
+                >
+                  Saloon
+                </Link>
+                <Link
+                  to="/services/spa"
+                  onClick={() => setMenuOpen(false)}
+                  className="pl-4 py-1 hover:text-yellow-500"
+                >
+                  SPA
+                </Link>
+              </div>
+            ) : (
+              <Link
+                key={item.name}
+                to={item.path}
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-yellow-500"
+              >
+                {item.name}
+              </Link>
+            )
+          )}
         </nav>
       </div>
 
