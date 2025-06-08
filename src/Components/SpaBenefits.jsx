@@ -39,7 +39,7 @@ const benefits = [
 const SpaBenefits = () => {
   return (
     <>
-      <div className="relative overflow-hidden h-[100px] mb-10">
+      <div className="relative overflow-hidden h-[100px] mb-10 py-20">
         <div className="absolute top-0 left-0 w-full whitespace-nowrap z-0 pointer-events-none">
           <div className="animate-marquee inline-block">
             <h2 className="text-[20vw] sm:text-[12vw] md:text-[10vw] font-extrabold text-gray-200 uppercase">

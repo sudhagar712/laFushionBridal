@@ -12,6 +12,7 @@ import PhotoGalleryWithModal from '../Components/PhotoGalleryWithModal'
 import TestimonialCarousel from '../Components/TestimonialCarousel'
 import FaqAccordion from '../Components/FaqAccordion'
 import ContactForm from './ContactPage'
+import NailTreatments from '../Components/NailTreatments'
 
 
 const LandingPage = () => {
@@ -22,17 +23,17 @@ const LandingPage = () => {
       <CategoryGrid />
       <PhotoGalleryWithModal />
       {/* <Carousel3D /> */}
-
+      <NailTreatments />
       <SpaBenefits />
       <hr />
 
       {/* <ShotOfTheDay /> */}
-
-      <FaqAccordion/>
-     
       <TestimonialCarousel />
-      <ContactForm/>
-     
+      <FaqAccordion />
+
+      <hr />
+      <ContactForm />
+
       {/* <HeroWithImageStrip/> */}
       <WhatsAppButton />
       <BackToTop />

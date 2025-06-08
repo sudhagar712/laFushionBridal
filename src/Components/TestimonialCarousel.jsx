@@ -2,8 +2,11 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
-import "@fortawesome/fontawesome-free/css/all.min.css";
 import "swiper/css/pagination";
+import salonVideo from "../assets/images/happyclient.mp4"
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
+
 
 const testimonials = [
   {
@@ -17,7 +20,7 @@ const testimonials = [
     role: "Happy Client"
   },
   {
-    text: "Ambience super 👍🏻 location 🥲 atmosphere  ✅ friendliness advise with kindness... Nambi vaanga santhosama ponga 👍🏻💥🤞🏻❣️",
+    text: "Ambience super 👍🏻 location 🥲 atmosphere ✅ friendliness advise with kindness... Nambi vaanga santhosama ponga 👍🏻💥🤞🏻❣️",
     name: "Revathi",
     role: "Happy Client"
   },
@@ -32,54 +35,62 @@ const testimonials = [
     role: "Happy Client"
   }
 ];
-  
 
 const TestimonialCarousel = () => {
   return (
-    <>
-      <section className="py-20 ">
-        <div className="text-center mb-12">
-          <h3
-            className="text-2xl md:text-4xl text-yellow-300 font-[Great Vibes] mb-2"
-            style={{ fontFamily: "'Great Vibes', cursive" }}
-          >
-            Happy Clients
-          </h3>
-          <div className="flex justify-center mt-4 items-center gap-2">
-            <span className="w-10 h-1 bg-yellow-400 rounded"></span>
-            <span className="w-8 h-1 bg-yellow-400 rounded"></span>
-            <span className="w-10 h-1 bg-yellow-400 rounded"></span>
-          </div>
+    <section className="md:py-20 bg-white md:mb-10">
+      <div className="text-center mb-9">
+        <h3
+          className="text-2xl md:text-2xl text-yellow-500 font-[Great Vibes] mb-2"
+          style={{ fontFamily: "'Great Vibes', cursive" }}
+        >
+          Happy Clients
+        </h3>
+        <div className="flex justify-center mt-4 items-center gap-2">
+          <span className="w-10 h-1 bg-yellow-400 rounded"></span>
+          <span className="w-8 h-1 bg-yellow-400 rounded"></span>
+          <span className="w-10 h-1 bg-yellow-400 rounded"></span>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row gap-10 items-center">
+        {/* Left Video Section */}
+        <div className="w-full md:w-1/2 rounded overflow-hidden shadow-lg">
+          <video
+            className="w-full h-[600px] object-cover rounded-lg"
+            src={salonVideo}
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
         </div>
 
-        <div className="max-w-7xl mx-auto px-4">
+        {/* Right Testimonial Carousel */}
+        <div className="w-full md:w-1/2 ">
           <Swiper
             modules={[Pagination, Autoplay]}
             spaceBetween={30}
             loop={true}
             autoplay={{ delay: 5000 }}
             pagination={{ clickable: true }}
-            breakpoints={{
-              640: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 }
-            }}
           >
             {testimonials.map((item, idx) => (
               <SwiperSlide key={idx}>
-                <div className="relative bg-white h-[200px] p-6 rounded shadow-xl italic pl-24">
-                  <div className="absolute left-6 top-1/2 transform -translate-y-1/2 text-green-600 text-2xl">
+                <div className="relative bg-white  min-h-[220px] p-6 rounded shadow-2xl border-2 border-gray-300 italic pl-24">
+                  <div className="absolute left-6 top-1/2 transform -translate-y-1/2 text-yellow-400 text-3xl">
                     <i className="fas fa-quote-left"></i>
                   </div>
                   <p className="mb-4">{item.text}</p>
                   <h3 className="text-lg font-bold not-italic">{item.name}</h3>
+                  <p className="text-sm text-gray-600">{item.role}</p>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 

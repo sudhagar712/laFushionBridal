@@ -54,7 +54,7 @@ const packages = [
 
 const PackageSection = () => {
   return (
-    <section className="py-12 px-4  bg-blue-100 text-center">
+    <section className="py-12 px-4 bg-gray-200 text-center">
       <h3 className="text-sm uppercase text-yellow-400 font-semibold mb-2">
         Pricing Package
       </h3>
@@ -62,7 +62,7 @@ const PackageSection = () => {
         Choose Your Perfect Package
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-4 gap-10  max-w-10xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-6xl mx-auto">
         {packages.map((pack, index) => (
           <div
             key={index}
@@ -90,9 +90,16 @@ const PackageSection = () => {
                   </li>
                 ))}
               </ul>
-              <button className="bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-2 rounded-full text-[10px] font-semibold transition-all">
+              <a
+                href={`https://wa.me/919003545353?text=${encodeURIComponent(
+                  `Hi, I'm interested in the ${pack.title} for bridal makeup. Please share the details.`
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-yellow-400 hover:bg-yellow-500 text-white px-4 py-2 rounded-full text-[10px] font-semibold transition-all inline-block text-center"
+              >
                 BOOK NOW ➜
-              </button>
+              </a>
             </div>
           </div>
         ))}
