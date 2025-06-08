@@ -90,7 +90,7 @@ const Banner = () => {
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/80 to-black/70 z-10" />
 
       {/* Content */}
       <div className="relative z-20 mt-10 flex flex-col items-center justify-center h-full text-center text-white px-4">

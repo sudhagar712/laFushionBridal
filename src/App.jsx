@@ -4,11 +4,13 @@ import LandingPage from "./Pages/LandingPage";
 import Navbar from "./Components/Navbar";
 import BridalPage from "./Pages/BridalPage";
 import Makeup from "./Pages/Makeup";
+import logo from "./assets/images/logo.png";
 import ContactForm from "./Pages/ContactPage";
-import loadingVideo from "./assets/images/bridemaster2.mp4";
+import loadingVideo from "./assets/images/masterbanner.mp4";
 import SaloonPage from "./Pages/SaloonPage";
 import Spapages from "./Pages/Spapages";
 import Footer from "./Components/Footer";
+import AboutPage from "./Pages/AboutPages";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -26,9 +28,8 @@ const App = () => {
           }
           return prev + 1;
         });
-      }, 70); // 70ms * 100 = 7000ms or 7 seconds
+      }, 70);
     }
-
     return () => clearInterval(interval);
   }, [loading]);
 
@@ -36,7 +37,7 @@ const App = () => {
     <>
       {loading ? (
         <div className="relative h-screen w-full overflow-hidden">
-          {/* ✅ Background Video */}
+          {/* Background Video */}
           <video
             className="absolute top-0 left-0 w-full h-full object-cover"
             src={loadingVideo}
@@ -45,12 +46,26 @@ const App = () => {
             loop
           />
 
-          {/* ✅ Overlay Content */}
-          <div className="relative z-10 flex flex-col items-center justify-center h-full bg-black/70">
-            <h2 className="text-4xl font-bold text-white drop-shadow-lg mb-2 animate-pulse">
-              Loading...
+          {/* Gradient + dark overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70 z-10" />
+
+          {/* Loader content */}
+          <div className="relative z-20 flex flex-col items-center justify-center h-full text-white px-4 text-center">
+            <img
+              src={logo}
+              alt="logo"
+              className="w-32 md:w-48 animate-bounce drop-shadow-2xl mb-6"
+            />
+            <h2 className="text-2xl md:text-4xl font-bold drop-shadow-xl animate-pulse">
+              Preparing your beauty experience...
             </h2>
-            <p className="text-white text-xl font-medium">{progress}%</p>
+            <div className="w-64 h-2 bg-white/30 rounded-full mt-6 overflow-hidden">
+              <div
+                className="h-full bg-yellow-400 transition-all duration-500"
+                style={{ width: `${progress}%` }}
+              ></div>
+            </div>
+            <p className="mt-2 text-yellow-300 font-semibold">{progress}%</p>
           </div>
         </div>
       ) : (
@@ -58,16 +73,14 @@ const App = () => {
           <Navbar />
           <Routes>
             <Route path="/" element={<LandingPage />} />
-            <Route
-              path="/services/bridalcollections"
-              element={<BridalPage />}
-            />
-            <Route path="/services/saloon" element={<SaloonPage/>}/>
-            <Route path="/services/spa" element={<Spapages/>}/>
+            <Route path="/about" element={<AboutPage/>}/>
+            <Route path="/services/bridalcollections" element={<BridalPage />} />
+            <Route path="/services/saloon" element={<SaloonPage />} />
+            <Route path="/services/spa" element={<Spapages />} />
             <Route path="/Makeup" element={<Makeup />} />
             <Route path="/contact" element={<ContactForm />} />
           </Routes>
-          <Footer/>
+          <Footer />
         </BrowserRouter>
       )}
     </>

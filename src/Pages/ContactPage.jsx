@@ -76,18 +76,19 @@ const ContactForm = () => {
             <br />
             <hr />
             <div className="mt-5">
-              <iframe
-                title="La Fusion Bridal Studio Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.4968194304175!2d79.8319239748186!3d11.933764488331266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5499eeb81bb27d%3A0x47a1cfb2aefc5d09!2sLa%20Fusion%20Bridal%20Studio!5e0!3m2!1sen!2sin!4v1717744703006!5m2!1sen!2sin"
-                width="100%"
-                height="250"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="shadow-md"
-              ></iframe>
-            </div>
+  <iframe
+    title="La Fusion Bridal Studio Location"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.4968194304175!2d79.8319239748186!3d11.933764488331266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5499eeb81bb27d%3A0x47a1cfb2aefc5d09!2sLa%20Fusion%20Bridal%20Studio!5e0!3m2!1sen!2sin!4v1717744703006!5m2!1sen!2sin"
+    width="100%"
+    height="250"
+    style={{ border: 0, filter: "grayscale(100%)" }}
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    className="shadow-lg rounded-md border border-black"
+  ></iframe>
+</div>
+
           </div>
         </div>
       </div>

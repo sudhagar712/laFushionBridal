@@ -26,18 +26,18 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed w-full px-5 py-1 top-0 left-0 z-50 transition-all duration-300 ${
+      className={`fixed w-full px-5 py-1 top-0 left-0 z-50 md:p-5 md:px-10 transition-all duration-300 ${
         isAtTop ? "bg-transparent text-white" : "hidden"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link to="/">
-          <img src={logo} alt="logo" className="w-[30%] md:w-[45%] mb-2" />
+          <img src={logo} alt="logo" className="w-[150px] md:w-[60%] mb-2" />
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex gap-8 font-medium border-2 border-white p-3 rounded-md">
+        <nav className="hidden md:flex gap-8 font-medium border-2 border-yellow-400  p-3 rounded-md">
           {menuItems.map((item) =>
             item.name === "Services" ? (
               <div className="relative group" key={item.name}>
@@ -83,7 +83,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Icon */}
         <button
-          className="md:hidden text-2xl"
+          className="md:hidden bg-yellow-500 p-2 px-3 rounded-md shadow-xl  text-2xl"
           onClick={() => setMenuOpen(true)}
         >
           <FiMenu />
@@ -92,26 +92,26 @@ const Navbar = () => {
 
       {/* Mobile Offcanvas Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-[90%] sm:w-[50%] bg-black bg-opacity-60 backdrop-blur-md text-white transform transition-transform duration-300 z-50 ${
+        className={`fixed top-0  right-0 h-full w-[100%] sm:w-[50%] bg-black bg-opacity-60 backdrop-blur-md text-white transform transition-transform duration-300 z-50 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex justify-between items-center p-4 border-b border-white">
+        <div className="flex  justify-between items-center p-4 border-b border-white">
           <div className="text-xl font-bold">
-            <span className="text-yellow-500">LaFusion</span> Bridal
+            <img src={logo} alt="" className="w-[150px] " />
           </div>
           <button
             onClick={() => setMenuOpen(false)}
-            className="text-2xl text-white"
+            className="text-2xl text-white bg-yellow-400 p-3 shadow-xl"
           >
             <FiX />
           </button>
         </div>
 
-        <nav className="flex flex-col p-6 gap-4 font-medium">
+        <nav className="flex flex-col p-6 gap-7 font-light text-2xl">
           {menuItems.map((item) =>
             item.name === "Services" ? (
-              <div className="flex flex-col" key={item.name}>
+              <div className="flex flex-col text-center " key={item.name}>
                 <span className="font-semibold text-yellow-500">Services</span>
                 <Link
                   to="/services/bridalcollections"
@@ -120,6 +120,7 @@ const Navbar = () => {
                 >
                   Bridal Collections
                 </Link>
+              
                 <Link
                   to="/services/saloon"
                   onClick={() => setMenuOpen(false)}
@@ -140,7 +141,7 @@ const Navbar = () => {
                 key={item.name}
                 to={item.path}
                 onClick={() => setMenuOpen(false)}
-                className="hover:text-yellow-400"
+                className="hover:text-yellow-400 text-center"
               >
                 {item.name}
               </Link>
