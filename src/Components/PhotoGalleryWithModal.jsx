@@ -51,7 +51,7 @@ const PhotoGalleryWithModal = () => {
       <section className="py-8 md:p-10 md:px-10">
         {/* Heading */}
 
-        <div className="relative overflow-hidden h-[200px] mb-2">
+        <div className="relative overflow-hidden h-[100px] md:h-[200px] mb-2">
           <div className="absolute top-0 left-0 w-full whitespace-nowrap z-0 pointer-events-none">
             <div className="animate-marquee inline-block">
               <h2 className="text-[20vw] sm:text-[12vw] md:text-[10vw] font-extrabold text-gray-200 uppercase">
@@ -64,7 +64,7 @@ const PhotoGalleryWithModal = () => {
 
         <div className="text-center mb-10">
           <h3
-            className="text-5xl text-yellow-400 font-[Great Vibes]"
+            className="text-3xl text-yellow-400 font-[Great Vibes]"
             style={{ fontFamily: "'Great Vibes', cursive" }}
           >
             Our Latest Collections

@@ -47,7 +47,7 @@ const App = () => {
           />
 
           {/* Gradient + dark overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70 z-10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black/70 z-10" />
 
           {/* Loader content */}
           <div className="relative z-20 flex flex-col items-center justify-center h-full text-white px-4 text-center">

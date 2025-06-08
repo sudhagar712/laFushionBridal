@@ -2,6 +2,8 @@ import React from "react";
 
 import bridal2 from "../assets/images/bridewed2.mp4";
 import PhotoGalleryWithModal from "../Components/PhotoGalleryWithModal";
+import { Link } from "react-router-dom";
+import { IoArrowUndoCircleOutline } from "react-icons/io5";
 
 const videos = [
  
@@ -18,7 +20,7 @@ const BridalPage = () => {
         {videos.map((video, index) => (
           <section
             key={index}
-            className="relative w-full h-[80vh] overflow-hidden mt-6 first:mt-0"
+            className="relative w-full  h-[300px]  md:min-h-screen overflow-hidden mt-6 first:mt-0"
           >
             <video
               className="w-full h-full object-cover"
@@ -29,15 +31,18 @@ const BridalPage = () => {
               playsInline
             />
             <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-              <h2 className="text-white text-4xl md:text-5xl font-bold text-center">
+              <h2 className="text-white text-xl border-2 border-white p-2  md:text-4xl font-bold text-center">
                 {video.title}
               </h2>
+              <Link to="/">
+                <IoArrowUndoCircleOutline className="text-4xl text-white" />
+              </Link>
             </div>
           </section>
         ))}
       </div>
 
-      <PhotoGalleryWithModal/>
+      <PhotoGalleryWithModal />
     </div>
   );
 };

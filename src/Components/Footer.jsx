@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-black md:h-[50vh] text-gray-300 py-10">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-[20px]">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-[60px]">
         {/* Logo & Description */}
 
-        <div>
+        <div className="">
          
             <Link to="/">
-              <img src={logo} alt="" className="w-[80%]" />
+              <img src={logo} alt="" className="w-[50%]" />
             </Link>
          
          
@@ -20,8 +20,8 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div>
-          <h3 className="text-white text-3xl font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2 text-sm">
+          <h3 className="text-yellow-400 text-3xl font-semibold mb-4">Quick Links</h3>
+          <ul className="space-y-3 text-sm">
             <li>
               <a href="#services" className="hover:text-yellow-400">
                 Services
@@ -47,18 +47,18 @@ const Footer = () => {
 
         {/* Contact Info */}
         <div>
-          <h3 className="text-white text-3xl font-semibold mb-4">Contact</h3>
-          <ul className="space-y-2 text-sm">
-            <li>📍 Puducherry, India</li>
-            <li>📞 +91 9003545353</li>
-            <li>✉️ lafusionbridal@gmail.com</li>
+          <h3 className="text-yellow-400 text-3xl font-semibold mb-4">Contact</h3>
+          <ul className="space-y-4 text-sm">
+            <li> Puducherry, India</li>
+            <li>+91 9003545353</li>
+            <li> lafusionbridal28@gmail.com</li>
           </ul>
         </div>
 
         {/* Social Media */}
         <div>
-          <h3 className="text-white text-3xl font-semibold mb-4">Follow Us</h3>
-          <div className="flex items-center gap-4 text-xl">
+          <h3 className="text-yellow-400 text-3xl font-semibold mb-4">Follow Us</h3>
+          <div className="flex items-center gap-4 text-4xl">
             <a
               href="https://instagram.com/lafusionbridal"
               className="text-pink-400 hover:text-pink-500"

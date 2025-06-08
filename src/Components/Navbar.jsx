@@ -108,7 +108,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        <nav className="flex flex-col p-6 gap-7 font-light text-2xl">
+        <nav className="flex flex-col p-6 gap-5 font-light text-[20px]">
           {menuItems.map((item) =>
             item.name === "Services" ? (
               <div className="flex flex-col text-center " key={item.name}>

@@ -24,7 +24,7 @@ const LandingPage = () => {
       <PhotoGalleryWithModal />
       {/* <Carousel3D /> */}
       <NailTreatments />
-      <SpaBenefits />
+      {/* <SpaBenefits /> */}
       <hr />
 
       {/* <ShotOfTheDay /> */}

@@ -82,17 +82,17 @@ const FaqAccordion = () => {
   };
 
   return (
-    <div className="max-w-7xl bg-gray-100 md:p-10 px-3 md:mb-10 md:py-12 mx-auto py-12">
-      <p className="text-2xl md:text-4xl text-yellow-500 font-semibold mb-7">
+    <div className="max-w-9xl  md:p-10 px-3 md:mb-10 md:py-12 mx-auto py-12">
+      <p className="text-xl md:text-4xl text-yellow-500 text-center font-semibold mb-9">
         Frequently Asked Any Question
       </p>
-      <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+      <h2 className="text-md md:text-2xl text-center font-semibold mb-6">
         Unveil Your True Beauty At Our Makeup Studio
       </h2>
 
       <div className="border rounded shadow-md bg-white">
         {faqs.map((faq, index) => (
-          <div key={index} className="border-b">
+          <div key={index} className="border-b p-3">
             <button
               className="w-full text-left px-4 py-4 flex justify-between items-center focus:outline-none"
               onClick={() => toggleAccordion(index)}

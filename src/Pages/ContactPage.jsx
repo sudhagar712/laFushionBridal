@@ -5,7 +5,7 @@ import bannerVideo from "../assets/images/bridemastervideo.mp4";
 
 const ContactForm = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full h-full min-h-screen  bg-gray-200">
+    <div className="flex flex-col md:flex-row w-full h-full min-h-screen  bg-gray-100">
       {/* Left Video Section */}
       <div className="relative md:w-1/2 h-[500px] md:h-auto overflow-hidden">
         <video
@@ -50,7 +50,7 @@ const ContactForm = () => {
                 WhatsApp
               </a>
               <a
-                href="https://instagram.com/lafusionbridal"
+                href="https://www.instagram.com/lafusion_bridal_studio/?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-white p-3 rounded-md text-pink-600"
@@ -62,33 +62,32 @@ const ContactForm = () => {
 
             <hr />
             <div className="mt-4">
-              <h2 className="uppercase font-bold mb-1 text-black text-2xl">
+              <h2 className="uppercase font-bold mb-1 text-black text-xl">
                 Address:
               </h2>
               <p className="text-gray-500 mt-4">
-                <strong className="text-yellow-500">La Fusion Bridal Studio</strong>
-                <br />
+                <strong className="text-yellow-500">
+                  La Fusion Bridal Studio:{" "}
+                </strong>
                 No. 93, 1st Floor, MG Road Corner & KBSN Kofi Bar Upstairs,
-                <br />
                 Vysial St, Puducherry, 605001
               </p>
             </div>
             <br />
             <hr />
             <div className="mt-5">
-  <iframe
-    title="La Fusion Bridal Studio Location"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.4968194304175!2d79.8319239748186!3d11.933764488331266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5499eeb81bb27d%3A0x47a1cfb2aefc5d09!2sLa%20Fusion%20Bridal%20Studio!5e0!3m2!1sen!2sin!4v1717744703006!5m2!1sen!2sin"
-    width="100%"
-    height="250"
-    style={{ border: 0, filter: "grayscale(100%)" }}
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-    className="shadow-lg rounded-md border border-black"
-  ></iframe>
-</div>
-
+              <iframe
+                title="La Fusion Bridal Studio Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.4968194304175!2d79.8319239748186!3d11.933764488331266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5499eeb81bb27d%3A0x47a1cfb2aefc5d09!2sLa%20Fusion%20Bridal%20Studio!5e0!3m2!1sen!2sin!4v1717744703006!5m2!1sen!2sin"
+                width="100%"
+                height="250"
+                style={{ border: 0, filter: "grayscale(100%)" }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="shadow-lg rounded-md border border-black"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
