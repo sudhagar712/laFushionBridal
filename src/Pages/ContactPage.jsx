@@ -5,7 +5,7 @@ import bannerVideo from "../assets/images/bridemastervideo.mp4";
 
 const ContactForm = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full h-full min-h-screen  bg-gray-100">
+    <div className="flex flex-col md:flex-row w-full h-full min-h-screen  bg-blue-400">
       {/* Left Video Section */}
       <div className="relative md:w-1/2 h-[500px] md:h-auto overflow-hidden">
         <video
@@ -28,15 +28,15 @@ const ContactForm = () => {
             Contact Us
           </h1>
 
-          <div className="space-y-5 text-gray-700 text-[15px]">
+          <div className="space-y-6  text-gray-700 text-[15px]">
             <div className="flex items-center gap-3">
-              <MdPhone className="text-2xl text-black" />
-              <span className="text-gray-500">+91 9003545353</span>
+              <MdPhone className="text-5xl text-black" />
+              <span className="text-gray-900">+91 9003545353</span>
             </div>
 
             <div className="flex items-center gap-3">
-              <MdEmail className="text-2xl text-black" />
-              <span className="text-gray-500">lafusionbridal@gmail.com</span>
+              <MdEmail className="text-5xl text-black" />
+              <span className="text-black">lafusionbridal28@gmail.com</span>
             </div>
 
             <div className="flex items-center gap-6 mt-2">
@@ -44,7 +44,7 @@ const ContactForm = () => {
                 href="https://wa.me/919003545353"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center bg-white p-3 rounded-md gap-2 text-green-600"
+                className="flex items-center bg-black p-3 rounded-md gap-2 text-green-600"
               >
                 <FaWhatsapp className="text-xl" />
                 WhatsApp
@@ -53,21 +53,22 @@ const ContactForm = () => {
                 href="https://www.instagram.com/lafusion_bridal_studio/?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-white p-3 rounded-md text-pink-600"
+                className="flex items-center gap-2 bg-black p-3 rounded-md text-pink-600"
               >
                 <FaInstagram className="text-xl" />
                 Instagram
               </a>
             </div>
 
-            <hr />
-            <div className="mt-4">
-              <h2 className="uppercase font-bold mb-1 text-black text-xl">
+           
+            <div className="mt-10">
+              <h2 className="uppercase font-bold mb-1 text-black text-2xl">
                 Address:
               </h2>
-              <p className="text-gray-500 mt-4">
-                <strong className="text-yellow-500">
-                  La Fusion Bridal Studio:{" "}
+              <hr />
+              <p className="text-black text-2xl mt-4">
+                <strong className=" text-2xl">
+                  la Fusion Bridal Studio:{" "}
                 </strong>
                 No. 93, 1st Floor, MG Road Corner & KBSN Kofi Bar Upstairs,
                 Vysial St, Puducherry, 605001

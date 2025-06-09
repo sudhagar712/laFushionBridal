@@ -13,6 +13,7 @@ import TestimonialCarousel from '../Components/TestimonialCarousel'
 import FaqAccordion from '../Components/FaqAccordion'
 import ContactForm from './ContactPage'
 import NailTreatments from '../Components/NailTreatments'
+import StatsSection from '../Components/StatsSection'
 
 
 const LandingPage = () => {
@@ -21,6 +22,7 @@ const LandingPage = () => {
       <Banner />
       <PhotographySection />
       <CategoryGrid />
+      <StatsSection/>
       <PhotoGalleryWithModal />
       {/* <Carousel3D /> */}
       <NailTreatments />
