@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
-import hair4 from "../assets/images/bridewed.mp4";
+import hair4 from "../assets/images/megahand.mp4";
 import hair5 from "../assets/images/bridewed2.mp4";
 import hair6 from "../assets/images/ban1.mp4";
 import hair7 from "../assets/images/ban3.mp4";

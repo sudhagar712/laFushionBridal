@@ -6,7 +6,7 @@ import BridalPage from "./Pages/BridalPage";
 import Makeup from "./Pages/Makeup";
 import logo from "./assets/images/logo.png";
 import ContactForm from "./Pages/ContactPage";
-import loadingVideo from "./assets/images/masterbanner.mp4";
+import loadingVideo from "./assets/images/mainlol2.mp4";
 import SaloonPage from "./Pages/SaloonPage";
 import Spapages from "./Pages/Spapages";
 import Footer from "./Components/Footer";
@@ -56,7 +56,7 @@ const App = () => {
               alt="logo"
               className="w-32 md:w-48 animate-bounce drop-shadow-2xl mb-6"
             />
-            <h2 className="text-2xl md:text-4xl font-bold drop-shadow-xl animate-pulse">
+            <h2 className="text-md md:text-xl font-bold drop-shadow-xl animate-pulse">
               Preparing your beauty experience...
             </h2>
             <div className="w-64 h-2 bg-white/30 rounded-full mt-6 overflow-hidden">

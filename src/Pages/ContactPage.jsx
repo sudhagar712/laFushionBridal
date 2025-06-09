@@ -1,11 +1,11 @@
 import React from "react";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { MdEmail, MdPhone } from "react-icons/md";
-import bannerVideo from "../assets/images/bridemastervideo.mp4"; 
+import bannerVideo from "../assets/images/convideo2.mp4"; 
 
 const ContactForm = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full h-full min-h-screen  bg-blue-400">
+    <div className="flex flex-col md:flex-row w-full h-full min-h-screen  bg-yellow-500">
       {/* Left Video Section */}
       <div className="relative md:w-1/2 h-[500px] md:h-auto overflow-hidden">
         <video
@@ -30,12 +30,12 @@ const ContactForm = () => {
 
           <div className="space-y-6  text-gray-700 text-[15px]">
             <div className="flex items-center gap-3">
-              <MdPhone className="text-5xl text-black" />
+              <MdPhone className="text-3xl text-black" />
               <span className="text-gray-900">+91 9003545353</span>
             </div>
 
             <div className="flex items-center gap-3">
-              <MdEmail className="text-5xl text-black" />
+              <MdEmail className="text-3xl text-black" />
               <span className="text-black">lafusionbridal28@gmail.com</span>
             </div>
 
@@ -44,7 +44,7 @@ const ContactForm = () => {
                 href="https://wa.me/919003545353"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center bg-black p-3 rounded-md gap-2 text-green-600"
+                className="flex items-center bg-yellow-50 p-3 rounded-md gap-2 text-green-600"
               >
                 <FaWhatsapp className="text-xl" />
                 WhatsApp
@@ -53,7 +53,7 @@ const ContactForm = () => {
                 href="https://www.instagram.com/lafusion_bridal_studio/?hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-black p-3 rounded-md text-pink-600"
+                className="flex items-center gap-2 bg-yellow-50 p-3 rounded-md text-pink-600"
               >
                 <FaInstagram className="text-xl" />
                 Instagram
@@ -66,9 +66,9 @@ const ContactForm = () => {
                 Address:
               </h2>
               <hr />
-              <p className="text-black text-2xl mt-4">
+              <p className="text-black text-xl mt-4">
                 <strong className=" text-2xl">
-                  la Fusion Bridal Studio:{" "}
+                  la Fusion Bridal Studio: &nbsp;
                 </strong>
                 No. 93, 1st Floor, MG Road Corner & KBSN Kofi Bar Upstairs,
                 Vysial St, Puducherry, 605001
