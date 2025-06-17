@@ -1,28 +1,30 @@
-import React from 'react'
-import Banner from '../Components/Banner'
-import PhotographySection from '../Components/PhotographySection'
-import SpaBenefits from '../Components/SpaBenefits'
-import BackToTop from '../Components/BackToTop'
+import React from "react";
+import Banner from "../Components/Banner";
+import PhotographySection from "../Components/PhotographySection";
+import SpaBenefits from "../Components/SpaBenefits";
+import BackToTop from "../Components/BackToTop";
 
-import CategoryGrid from '../Components/CategoryGrid'
-import Carousel3D from '../Components/Carousel3D'
-import WhatsAppButton from '../Components/WhatsAppButton'
-import PhotoGalleryWithModal from '../Components/PhotoGalleryWithModal'
+import CategoryGrid from "../Components/CategoryGrid";
+import Carousel3D from "../Components/Carousel3D";
+import WhatsAppButton from "../Components/WhatsAppButton";
+import PhotoGalleryWithModal from "../Components/PhotoGalleryWithModal";
 
-import TestimonialCarousel from '../Components/TestimonialCarousel'
-import FaqAccordion from '../Components/FaqAccordion'
-import ContactForm from './ContactPage'
-import NailTreatments from '../Components/NailTreatments'
-import StatsSection from '../Components/StatsSection'
-
+import TestimonialCarousel from "../Components/TestimonialCarousel";
+import FaqAccordion from "../Components/FaqAccordion";
+import ContactForm from "./ContactPage";
+import NailTreatments from "../Components/NailTreatments";
+import StatsSection from "../Components/StatsSection";
+import AboutPage from "./AboutPages";
 
 const LandingPage = () => {
   return (
     <div>
       <Banner />
       <PhotographySection />
+
       <CategoryGrid />
-      <StatsSection/>
+      {/* <AboutPage /> */}
+
       <PhotoGalleryWithModal />
       {/* <Carousel3D /> */}
       <NailTreatments />
@@ -41,6 +43,6 @@ const LandingPage = () => {
       <BackToTop />
     </div>
   );
-}
+};
 
-export default LandingPage
+export default LandingPage;

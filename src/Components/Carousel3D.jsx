@@ -22,9 +22,9 @@ const Carousel3D = () => {
   return (
     <section className="my-10 py-5 px-4">
       <h2 className="text-yellow-400  text-3xl md:text-6xl font-cursive text-center mb-12 drop-shadow-md">
-      Our Services
+      Fav Collection
       </h2>
-      <div className="md:max-w-6xl  mx-auto relative">
+      <div className="max-w-7xl    mx-auto relative">
         <Swiper
           modules={[Pagination, EffectCoverflow]}
           effect="coverflow"

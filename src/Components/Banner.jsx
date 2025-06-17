@@ -3,8 +3,8 @@ import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import hair4 from "../assets/images/megahand.mp4";
 import hair5 from "../assets/images/bridewed2.mp4";
 import hair6 from "../assets/images/ban1.mp4";
-import hair7 from "../assets/images/ban3.mp4";
-import hair8 from "../assets/images/ban4.mp4";
+import hair7 from "../assets/images/spanew.mp4";
+import hair8 from "../assets/images/hande.mp4";
 
 const slides = [
   {
@@ -29,14 +29,14 @@ const slides = [
     shop: "Pondicherry",
   },
   {
-    title: "Saloon SPA",
+    title: "Saloon",
     description:
       "Magnis dis parturient montes nascetur ridiculus mus mauris vitae.",
     video: hair6,
     shop: "Pondicherry",
   },
   {
-    title: "HairCut",
+    title: "spa",
     description:
       "Magnis dis parturient montes nascetur ridiculus mus mauris vitae.",
     video: hair7,
