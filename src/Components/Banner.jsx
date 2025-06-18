@@ -101,7 +101,7 @@ const Banner = () => {
         </h1> */}
         <div className=" mb-4">
           <Link to="/">
-            <img src={logo} alt="logo" className="w-[150px] md:w-[100%] md:h-[150px] rounded-full  mb-2" />
+            <img src={logo} alt="logo" className="w-[100px] md:w-[100%] md:h-[150px] rounded-full " />
           </Link>
         </div>
 

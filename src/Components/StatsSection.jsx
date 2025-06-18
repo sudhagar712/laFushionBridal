@@ -22,8 +22,8 @@ const Counter = ({ icon: Icon, target, label }) => {
   return (
     <>
      
-      <div className="flex  bg-white  shadow-lg gap-3   p-10 items-center text-center space-y-4">
-        <Icon className="text-4xl text-yellow-500" />
+      <div className="flex flex-col p-6 mb-10  bg-white  mt-5 shadow-lg  md:p-10  items-center text-center space-y-2">
+        <Icon className="text-4xl  text-yellow-500" />
         <div className="text-3xl font-semibold text-black">
           {target >= 1000 ? `${count}k+` : `${count}+`}
         </div>
@@ -35,7 +35,7 @@ const Counter = ({ icon: Icon, target, label }) => {
 
 const StatsSection = () => {
   return (
-    <div className="bg-[#f8f2ef] md:py-12 md:p-10 md:px-10">
+    <div className="bg-gray-300 md:py-12   md:px-10">
       <div className="max-w-10xl mx-auto grid grid-cols-2 md:grid-cols-2 gap-10 px-4 text-center">
         <Counter icon={FaAward} target={10} label="Years of Experience" />
         <Counter icon={FaLeaf} target={100} label="Natural Products" />

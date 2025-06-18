@@ -77,7 +77,7 @@ const PhotographySection = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-5 mt-5  md:py-5 mb-5  flex flex-col lg:flex-row items-center gap-10">
+        <div className="relative z-10 container mx-auto px-5 mt-5 md:py-5 mb-5 flex flex-col-reverse lg:flex-row items-center gap-10">
           {/* Text */}
           <div className="w-full lg:w-1/2 md:text-center lg:text-left">
             <h3
@@ -100,21 +100,21 @@ const PhotographySection = () => {
               looking radiant from every angle.
             </p>
             <Link to="/services/saloon">
-              <button className="bg-yellow-300 border-2 border-white p-3 px-4  mt-3">
+              <button className="bg-yellow-300 border-2 border-white p-3 px-4 mt-3">
                 Show More
               </button>
             </Link>
           </div>
 
-          {/* Image */}
-          <div className="w-full lg:w-1/2  flex justify-center">
+          {/* Video */}
+          <div className="w-full lg:w-1/2 flex justify-center">
             <video
-              src={saloonVideo} // replace with your actual video import or path
+              src={saloonVideo} // replace with your actual video import
               autoPlay
               loop
               muted
               playsInline
-              className="w-full md:max-w-2xl   rounded-lg shadow-xl transform rotate-[-6deg]"
+              className="w-full md:max-w-2xl rounded-lg shadow-xl transform rotate-[-6deg]"
             />
           </div>
         </div>
