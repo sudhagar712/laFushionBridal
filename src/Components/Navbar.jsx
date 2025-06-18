@@ -39,7 +39,7 @@ const Navbar = () => {
           {menuItems.map((item) =>
             item.name === "Services" ? (
               <div
-                className="relative group border border-white bg-yellow-400 md:p-2  px-3 py-1"
+                className="relative group border border-white hover:bg-yellow-400 md:p-2  px-3 py-1"
                 key={item.name}
               >
                 <span className=" cursor-pointer transition duration-200">
@@ -74,7 +74,7 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className="border border-white bg-yellow-400 md:p-2 md:px-5 py-1   transition duration-200"
+                className="border border-white hover:bg-yellow-400 md:p-2 md:px-5 py-1   transition duration-200"
               >
                 {item.name}
               </Link>
@@ -142,7 +142,7 @@ const Navbar = () => {
                 key={item.name}
                 to={item.path}
                 onClick={() => setMenuOpen(false)}
-                className="text-center border border-white rounded-md py-2 hover:text-yellow-400"
+                className="text-center border border-white  rounded-md py-2  "
               >
                 {item.name}
               </Link>
