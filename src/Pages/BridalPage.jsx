@@ -1,6 +1,6 @@
 import React from "react";
 
-import bridal2 from "../assets/images/bridewed2.mp4";
+import bridal2 from "../assets/images/bridalvd.mp4";
 import PhotoGalleryWithModal from "../Components/PhotoGalleryWithModal";
 import { Link } from "react-router-dom";
 import { IoArrowUndoCircleOutline } from "react-icons/io5";

@@ -1,6 +1,6 @@
 import React from "react";
 
-import cat2 from "../assets/images/bridewed.mp4";
+import cat2 from "../assets/images/bridalmakeup.mp4";
 import cat3 from "../assets/images/spanew.mp4";
 import cat4 from "../assets/images/haircut.mp4";
 import cat5 from "../assets/images/makeupvd.mp4";
