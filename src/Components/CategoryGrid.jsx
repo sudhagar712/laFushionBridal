@@ -3,8 +3,6 @@ import React from "react";
 import cat2 from "../assets/images/bridewed2.mp4";
 import cat3 from "../assets/images/spanew.mp4";
 import cat4 from "../assets/images/haircut.mp4";
-import cat5 from "../assets/images/makeupvideo.mp4";
-
 import { Link } from "react-router-dom";
 
 const categories = [
@@ -22,18 +20,13 @@ const categories = [
     title: "Haircut",
     video: cat4,
     link: "/services/saloon"
-  },
-  {
-    title: "Makeup",
-    video: cat5,
-    link: "/Makeup"
   }
 ];
 
 const CategoryGrid = () => {
   return (
     <>
-      <div className="text-center md:py-5">
+      <div className="text-center">
         <h3
           className="text-3xl md:text-5xl mb-10 text-yellow-300 font-[Great Vibes]"
           style={{ fontFamily: "'Great Vibes', cursive" }}
@@ -42,10 +35,10 @@ const CategoryGrid = () => {
         </h3>
       </div>
 
-      <div className="grid grid-cols-1 px-3 md:px-[20px] md:p-5 md:grid-cols-2 gap-9">
+      <div className="grid grid-cols-1 px-3 md:px-15 md:grid-cols-3 gap-10">
         {categories.map((category, index) => (
           <Link to={category.link} key={index}>
-            <div className="relative group h-[700px] overflow-hidden cursor-pointer rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
+            <div className="relative group h-[500px] overflow-hidden cursor-pointer rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
               <video
                 src={category.video}
                 className="w-full h-full object-cover"
