@@ -20,11 +20,11 @@ const slides = [
 
 const Carousel3D = () => {
   return (
-    <section className="my-10 py-5 px-4">
+    <section className="relative md:py-20 h-[550px] md:h-[900px]  mt-[50px]  overflow-hidden">
       <h2 className="text-yellow-400  text-3xl md:text-6xl font-cursive text-center mb-12 drop-shadow-md">
-      Fav Collection
+        Fav Collection
       </h2>
-      <div className="max-w-7xl    mx-auto relative">
+      <div className="max-w-7xl p-5   mx-auto relative">
         <Swiper
           modules={[Pagination, EffectCoverflow]}
           effect="coverflow"
@@ -49,7 +49,7 @@ const Carousel3D = () => {
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="rounded-xl overflow-hidden shadow-lg bg-white transition-all duration-300 hover:scale-[1.01]">
+              <div className="rounded-md md:h-[400px]  overflow-hidden shadow-lg bg-white transition-all duration-300 hover:scale-[1.01]">
                 <div className="aspect-video overflow-hidden">
                   <img
                     src={slide.image}
@@ -57,8 +57,8 @@ const Carousel3D = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-4 text-center">
-                  <h3 className="text-lg sm:text-xl font-semibold">
+                <div className="p-10 text-center">
+                  <h3 className="md:text-2xl sm:text-xl text-yellow-400 font-semibold">
                     {slide.title}
                   </h3>
                 </div>
@@ -66,6 +66,15 @@ const Carousel3D = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+
+      <div className="absolute  left-0 w-full h-[200px] whitespace-nowrap z-0 pointer-events-none">
+        <div className="animate-marquee inline-block">
+          <h2 className="text-[20vw] sm:text-[12vw] md:text-[10vw] font-extrabold text-gray-300 uppercase">
+            Good Moments Showcased &nbsp; Good Moments Showcased &nbsp; Good
+            Moments Showcased
+          </h2>
+        </div>
       </div>
     </section>
   );

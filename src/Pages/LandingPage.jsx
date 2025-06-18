@@ -6,7 +6,7 @@ import PhotographySection from "../Components/PhotographySection";
 
 import CategoryGrid from "../Components/CategoryGrid";
 import Carousel3D from "../Components/Carousel3D";
-import WhatsAppButton from "../Components/WhatsAppButton";
+
 import PhotoGalleryWithModal from "../Components/PhotoGalleryWithModal";
 
 import TestimonialCarousel from "../Components/TestimonialCarousel";
@@ -23,15 +23,15 @@ const LandingPage = () => {
       <PhotographySection />
 
       <CategoryGrid />
-      {/* <AboutPage /> */}
+      
 
       <PhotoGalleryWithModal />
-      {/* <Carousel3D /> */}
+      <Carousel3D />
       <NailTreatments />
       {/* <SpaBenefits /> */}
       <hr />
 
-      {/* <ShotOfTheDay /> */}
+   
       <TestimonialCarousel />
       <FaqAccordion />
 
