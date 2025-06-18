@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import logo from "../assets/images/logo.png";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
-import hair4 from "../assets/images/megahand.mp4";
+import hair4 from "../assets/images/angelvd.mp4";
 import hair5 from "../assets/images/bridewed2.mp4";
 import hair6 from "../assets/images/ban1.mp4";
 import hair7 from "../assets/images/spanew.mp4";
 import hair8 from "../assets/images/hande.mp4";
+import { Link } from "react-router-dom";
 
 const slides = [
   {
@@ -12,36 +14,36 @@ const slides = [
     description:
       "Magnis dis parturient montes nascetur ridiculus mus mauris vitae.",
     video: hair4,
-    shop: "Pondicherry",
+    shop: "Pondicherry"
   },
   {
     title: "Traditional Bridal Makeup",
     description:
       "Magnis dis parturient montes nascetur ridiculus mus mauris vitae.",
     video: hair8,
-    shop: "Pondicherry",
+    shop: "Pondicherry"
   },
   {
     title: "Bridal MakeUp",
     description:
       "Magnis dis parturient montes nascetur ridiculus mus mauris vitae.",
     video: hair5,
-    shop: "Pondicherry",
+    shop: "Pondicherry"
   },
   {
     title: "Saloon",
     description:
       "Magnis dis parturient montes nascetur ridiculus mus mauris vitae.",
     video: hair6,
-    shop: "Pondicherry",
+    shop: "Pondicherry"
   },
   {
     title: "spa",
     description:
       "Magnis dis parturient montes nascetur ridiculus mus mauris vitae.",
     video: hair7,
-    shop: "Pondicherry",
-  },
+    shop: "Pondicherry"
+  }
 ];
 
 const Banner = () => {
@@ -68,11 +70,11 @@ const Banner = () => {
   const { title, video, shop } = slides[current];
 
   return (
-    <section className="relative w-full md:h-[100vh] h-[300px] overflow-hidden ">
+    <section className="relative w-full md:h-[100vh] h-[50vh] overflow-hidden ">
       {/* Video background */}
       <div className="absolute inset-0 bg-black  w-full h-full z-10 mix-blend-multiply">
         {loading && (
-          <div className="absolute inset-0 flex items-center justify-center bg-black/60 z-10 backdrop-brightness-50">
+          <div className="absolute inset-0 flex items-center justify-center bg-black/70 z-10 backdrop-brightness-50">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-yellow-400"></div>
           </div>
         )}
@@ -90,13 +92,19 @@ const Banner = () => {
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/80 to-black/70 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/30 to-black/30 z-10" />
 
       {/* Content */}
-      <div className="relative z-20 mt-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
-        <h1 className="text-[13px] sm:text-4xl md:text-6xl text-white font-serif  mb-2">
+      <div className="relative z-20 mt-10   flex flex-col items-center justify-center h-full text-center text-white px-4">
+        {/* <h1 className="text-[13px] sm:text-4xl md:text-3xl  text-white font-serif  mb-2">
           Welcome To laFusion Bridal Studio
-        </h1>
+        </h1> */}
+        <div className=" mb-4">
+          <Link to="/">
+            <img src={logo} alt="logo" className="w-[150px] md:w-[100%] md:h-[150px] rounded-full  mb-2" />
+          </Link>
+        </div>
+
         <h1 className="text-[16px] sm:text-3xl md:text-3xl text-yellow-400 font-serif  mb-2">
           {title}
         </h1>
@@ -104,7 +112,7 @@ const Banner = () => {
           {shop}
         </p>
         <a href="tel:+919003545353">
-          <button className="border-2 border-yellow-400  py-2 bg-yellow-500   px-5  text-[10px] md:text-[20px]  transition">
+          <button className="border-2 border-white bg-yellow-400  py-2    px-5  text-[10px] md:text-[18px]  transition">
             <span>Book an Appointment</span>
           </button>
         </a>

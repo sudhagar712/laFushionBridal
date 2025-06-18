@@ -1,11 +1,11 @@
 import React from "react";
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { MdEmail, MdPhone } from "react-icons/md";
-import bannerVideo from "../assets/images/convideo2.mp4"; 
+import bannerVideo from "../assets/images/angel2vd.mp4"; 
 
 const ContactForm = () => {
   return (
-    <div className="flex flex-col md:flex-row w-full h-full min-h-screen  bg-yellow-500">
+    <div className="flex flex-col  md:flex-row w-full h-full min-h-screen mb-4  bg-gray-300">
       {/* Left Video Section */}
       <div className="relative md:w-1/2 h-[500px] md:h-auto overflow-hidden">
         <video
@@ -24,7 +24,7 @@ const ContactForm = () => {
       {/* Right Contact Section */}
       <div className="md:w-1/2 flex items-center justify-center p-6 md:p-12">
         <div className="bg-opacity-80 backdrop-blur-lg w-full max-w-xl">
-          <h1 className="text-3xl md:text-2xl text-black md:mt-10 font-bold uppercase tracking-wider mb-6 border-b pb-2">
+          <h1 className="text-3xl md:text-2xl text-black md:mt-[90px] font-bold uppercase tracking-wider mb-6 border-b pb-2">
             Contact Us
           </h1>
 
@@ -62,12 +62,12 @@ const ContactForm = () => {
 
            
             <div className="mt-10">
-              <h2 className="uppercase font-bold mb-1 text-black text-2xl">
+              <h2 className="uppercase font-bold mb-1 text-black text-xl">
                 Address:
               </h2>
               <hr />
               <p className="text-black text-xl mt-4">
-                <strong className=" text-2xl">
+                <strong className=" text-xl">
                   la Fusion Bridal Studio: &nbsp;
                 </strong>
                 No. 93, 1st Floor, MG Road Corner & KBSN Kofi Bar Upstairs,

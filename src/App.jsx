@@ -11,6 +11,9 @@ import SaloonPage from "./Pages/SaloonPage";
 import Spapages from "./Pages/Spapages";
 import Footer from "./Components/Footer";
 import AboutPage from "./Pages/AboutPages";
+import ScrollToTop from "./Components/ScrollToTop";
+import WhatsAppButton from "./Components/WhatsAppButton";
+import BackToTop from "./Components/BackToTop";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -71,15 +74,21 @@ const App = () => {
       ) : (
         <BrowserRouter>
           <Navbar />
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<LandingPage />} />
-            <Route path="/about" element={<AboutPage/>}/>
-            <Route path="/services/bridalcollections" element={<BridalPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route
+              path="/services/bridalcollections"
+              element={<BridalPage />}
+            />
             <Route path="/services/saloon" element={<SaloonPage />} />
             <Route path="/services/spa" element={<Spapages />} />
             <Route path="/Makeup" element={<Makeup />} />
             <Route path="/contact" element={<ContactForm />} />
           </Routes>
+          <WhatsAppButton />
+          <BackToTop />
           <Footer />
         </BrowserRouter>
       )}

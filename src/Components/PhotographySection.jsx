@@ -1,7 +1,7 @@
 import React from "react";
-import coupleImage from "../assets/images/photos4.jpg";
-import Salooncut from "../assets/images/saloonhaircut.webp";
-import spa from "../assets/images/spamass.webp"
+import coupleVideo from "../assets/images/bridalvd.mp4";
+import saloonVideo from "../assets/images/saloonvd.mp4";
+import spaVideo from "../assets/images/spavd.mp4";
 
 import { Link } from "react-router-dom";
 
@@ -21,13 +21,16 @@ const PhotographySection = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-10  flex flex-col lg:flex-row items-center gap-10">
+        <div className="relative z-10 container mx-auto px-5 mt-5   flex flex-col lg:flex-row items-center gap-10">
           {/* Image */}
-          <div className="w-full lg:w-1/2  flex justify-center">
-            <img
-              src={coupleImage}
-              alt="Couple"
-              className="w-full  max-w-lg rounded-lg shadow-xl  transform rotate-[-6deg]"
+          <div className="w-full lg:w-1/2 flex justify-center">
+            <video
+              src={coupleVideo} // replace with your actual video import or path
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full md:max-w-2xl   rounded-lg shadow-xl transform rotate-[-6deg]"
             />
           </div>
 
@@ -74,7 +77,7 @@ const PhotographySection = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-10 flex flex-col-reverse lg:flex-row items-center gap-10">
+        <div className="relative z-10 container mx-auto px-5 mt-5  md:py-5 mb-5  flex flex-col lg:flex-row items-center gap-10">
           {/* Text */}
           <div className="w-full lg:w-1/2 md:text-center lg:text-left">
             <h3
@@ -105,10 +108,13 @@ const PhotographySection = () => {
 
           {/* Image */}
           <div className="w-full lg:w-1/2  flex justify-center">
-            <img
-              src={Salooncut}
-              alt="Couple"
-              className="w-full md:h-[500px] h-[300px] max-w-lg rounded-lg shadow-xl  transform rotate-[-6deg]"
+            <video
+              src={saloonVideo} // replace with your actual video import or path
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full md:max-w-2xl   rounded-lg shadow-xl transform rotate-[-6deg]"
             />
           </div>
         </div>
@@ -127,16 +133,18 @@ const PhotographySection = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-10  flex flex-col lg:flex-row items-center gap-10">
+        <div className="relative z-10 container mx-auto px-5 mt-5  md:py-5 mb-5  flex flex-col lg:flex-row items-center gap-10">
           {/* Image */}
           <div className="w-full lg:w-1/2  flex justify-center">
-            <img
-              src={spa}
-              alt="Couple"
-              className="w-full  md:h-[500px] h-[300px]   max-w-lg rounded-lg shadow-xl  transform rotate-[-6deg]"
+            <video
+              src={spaVideo} // replace with your actual video import or path
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full md:max-w-2xl   rounded-lg shadow-xl transform rotate-[-6deg]"
             />
           </div>
-
           {/* Text */}
           <div className="w-full lg:w-1/2 md:text-center lg:text-left">
             <h3

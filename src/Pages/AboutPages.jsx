@@ -28,13 +28,13 @@ const AboutPage = () => {
             <h2 className="text-3xl md:text-4xl p-4   font-bold mb-4 text-yellow-500">
               About Our Studio
             </h2>
-            <p className="text-white px-5  text-base md:text-lg leading-relaxed mb-4">
+            <p className=" px-5  text-[12px] md:text-[20px] leading-relaxed mb-4">
               At La Fusion Bridal Studio, we bring out the best in you by
               enhancing your natural beauty. With a passionate team and
               personalized service, we make every makeover a magical
               transformation.
             </p>
-            <p className="text-white px-5 text-base md:text-lg leading-relaxed">
+            <p className=" px-5 text-base md:text-lg leading-relaxed">
               Whether it's for your big day, a special event, or just a
               self-care moment, our expertise in bridal, makeup, and spa ensures
               you feel confident and radiant.

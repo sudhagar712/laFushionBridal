@@ -1,25 +1,25 @@
 import React, { useState, useEffect } from "react";
 
 // Import your images
-import img1 from "../assets/images/photos1.jpg";
+// import img1 from "../assets/images/photos1.jpg";
 import img2 from "../assets/images/photos2.jpg";
 import img3 from "../assets/images/photos3.jpg";
 import img4 from "../assets/images/photos4.jpg";
 import img5 from "../assets/images/photos5.jpg";
-import img6 from "../assets/images/photos6.jpeg";
+// import img6 from "../assets/images/photos6.jpeg";
 import img7 from "../assets/images/photos7.webp";
 import img8 from "../assets/images/photos8.jpg";
 import img9 from "../assets/images/photos9.jpg";
 
 // Array of image + layout spans (responsive)
 const images = [
-  { src: img1, colSpan: "col-span-2", rowSpan: "row-span-2" },
+  // { src: img1, colSpan: "col-span-2", rowSpan: "row-span-2" },
   { src: img2, colSpan: "col-span-1", rowSpan: "row-span-1" },
   { src: img3, colSpan: "col-span-1", rowSpan: "row-span-1" },
   { src: img4, colSpan: "col-span-2", rowSpan: "row-span-1" },
   { src: img5, colSpan: "col-span-1", rowSpan: "row-span-1" },
-  { src: img6, colSpan: "col-span-1", rowSpan: "row-span-1" },
-  { src: img7, colSpan: "col-span-2", rowSpan: "row-span-2" },
+
+  { src: img7, colSpan: "col-span-1", rowSpan: "row-span-1" },
   { src: img8, colSpan: "col-span-1", rowSpan: "row-span-1" },
   { src: img9, colSpan: "col-span-1", rowSpan: "row-span-1" },
 ];
@@ -48,7 +48,7 @@ const PhotoGalleryWithModal = () => {
 
   return (
     <>
-      <section className="py-8 md:p-10 md:px-10">
+      <section className="py-8 md:p-[50px] md:px-[50px]">
         {/* Heading */}
 
         <div className="relative overflow-hidden h-[100px] md:h-[200px] mb-2">
@@ -78,7 +78,7 @@ const PhotoGalleryWithModal = () => {
         </div>
 
         {/* Masonry Grid Layout */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-1  auto-rows-[-900px] md:auto-rows-[400px]">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:p-9 md:grid-cols-4 md:gap-6 gap-3  auto-rows-[-900px] md:auto-rows-[400px]">
           {images.map((img, idx) => (
             <div
               key={idx}
@@ -119,6 +119,17 @@ const PhotoGalleryWithModal = () => {
             </div>
           </div>
         )}
+
+        <div className="relative overflow-hidden h-[100px] md:h-[200px] mb-2">
+          <div className="absolute top-0 left-0 w-full whitespace-nowrap z-0 pointer-events-none">
+            <div className="animate-marquee inline-block">
+              <h2 className="text-[20vw] sm:text-[12vw] md:text-[10vw] font-extrabold text-gray-200 uppercase">
+                Good Moments Showcased &nbsp; Good Moments Showcased &nbsp; Good
+                Moments Showcased
+              </h2>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );
