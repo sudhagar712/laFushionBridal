@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { FiMenu, FiX } from "react-icons/fi";
+import {  FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
+import { CgMenuRightAlt } from "react-icons/cg";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -24,14 +25,14 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed w-full px-5 py-1 top-0 left-0 z-50 md:p-5 md:px-10 transition-all duration-300 ${
+      className={`fixed w-full px-5 py-1 top-0 left-0 z-50 md:p-5 mt-4 md:mt-0 md:px-10 transition-all duration-300 ${
         isAtTop ? "bg-transparent text-white" : "hidden"
       }`}
     >
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link to="/">
-          <img src={logo} alt="logo" className="w-[150px] md:w-[60%] mb-2" />
+          <img src={logo} alt="logo" className="w-[110px] md:w-[60%] mb-2" />
         </Link>
 
         {/* Desktop Menu */}
@@ -92,24 +93,24 @@ const Navbar = () => {
 
         {/* Mobile Menu Icon */}
         <button
-          className="md:hidden bg-yellow-400 p-2 px-3 rounded-md shadow-xl text-2xl"
+          className="md:hidden bg-yellow-400 p-1 px-2 border-2 border-white rounded-md shadow-2xl text-2xl"
           onClick={() => setMenuOpen(true)}
         >
-          <FiMenu />
+          <CgMenuRightAlt />
         </button>
       </div>
 
       {/* Mobile Offcanvas Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-[100%] sm:w-[50%] bg-black bg-opacity-60 backdrop-blur-md text-white transform transition-transform duration-300 z-50 ${
+        className={`fixed top-0 right-0 h-full w-[100%] sm:w-[50%] bg-black bg-opacity-50 backdrop-blur-md text-white transform transition-transform duration-300 z-50 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex justify-between items-center p-4 border-b border-white">
-          <img src={logo} alt="logo" className="w-[150px]" />
+        <div className="flex justify-between items-center p-4 border-b border-yellow-400">
+          <img src={logo} alt="logo" className="w-[120px]" />
           <button
             onClick={() => setMenuOpen(false)}
-            className="text-2xl text-white bg-yellow-400 p-3 shadow-xl"
+            className="text-xl text-white bg-yellow-400 p-2 shadow-2xl"
           >
             <FiX />
           </button>
@@ -119,7 +120,7 @@ const Navbar = () => {
           {menuItems.map((item) =>
             item.name === "Services" ? (
               <div
-                className="flex flex-col text-center border border-white  p-2"
+                className="flex flex-col text-center space-y-2  p-2"
                 key={item.name}
               >
                 <span className="font-semibold text-yellow-500">Services</span>
@@ -158,7 +159,7 @@ const Navbar = () => {
                 key={item.name}
                 to={item.path}
                 onClick={() => setMenuOpen(false)}
-                className="text-center border border-white  rounded-md py-2  "
+                className="text-center   rounded-md py-2  "
               >
                 {item.name}
               </Link>
