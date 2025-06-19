@@ -56,6 +56,14 @@ const Navbar = () => {
                   >
                     Bridal Collections
                   </Link>
+
+                  <Link
+                    to="/services/mehandi"
+                    className="block px-4 py-2 hover:bg-yellow-100"
+                  >
+                    Mehandi Collections
+                  </Link>
+
                   <Link
                     to="/services/saloon"
                     className="block px-4 py-2 hover:bg-yellow-100"
@@ -121,6 +129,14 @@ const Navbar = () => {
                   className="py-1 hover:text-yellow-400"
                 >
                   Bridal Collections
+                </Link>
+
+                <Link
+                  to="/services/mehandi"
+                  onClick={() => setMenuOpen(false)}
+                  className="py-1 hover:text-yellow-400"
+                >
+                  Mehandi Collections
                 </Link>
                 <Link
                   to="/services/saloon"

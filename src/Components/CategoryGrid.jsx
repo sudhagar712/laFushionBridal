@@ -17,7 +17,7 @@ const categories = [
   {
     title: "Mehandi",
     video: cat6,
-    link: ""
+    link: "/services/mehandi"
   },
   {
     title: "Beauty Makeup",

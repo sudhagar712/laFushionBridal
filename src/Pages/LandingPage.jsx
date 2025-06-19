@@ -15,6 +15,7 @@ import ContactForm from "./ContactPage";
 import NailTreatments from "../Components/NailTreatments";
 
 import AboutPage from "./AboutPages";
+import BridalPackages from "../Components/BridalPackages";
 
 const LandingPage = () => {
   return (
@@ -24,6 +25,7 @@ const LandingPage = () => {
 
       <CategoryGrid />
       
+       <BridalPackages/>
 
       <PhotoGalleryWithModal />
       <Carousel3D />

@@ -14,6 +14,7 @@ import AboutPage from "./Pages/AboutPages";
 import ScrollToTop from "./Components/ScrollToTop";
 import WhatsAppButton from "./Components/WhatsAppButton";
 import BackToTop from "./Components/BackToTop";
+import Mehandi from "./Pages/Mehandi";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -84,6 +85,8 @@ const App = () => {
             />
             <Route path="/services/saloon" element={<SaloonPage />} />
             <Route path="/services/spa" element={<Spapages />} />
+            <Route path="/services/mehandi" element={<Mehandi/>} />
+
             <Route path="/Makeup" element={<Makeup />} />
             <Route path="/contact" element={<ContactForm />} />
           </Routes>
