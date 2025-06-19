@@ -4,8 +4,8 @@ import aboutVideo from "../assets/images/nailvideo.mp4";
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-[#f8f2ef] py-16">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <section className="bg-yellow-400 py-16">
+      <div className="max-w-9xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
         {/* Left Side */}
         <div className="space-y-6">
           <h4 className="text-amber-700 font-semibold tracking-wide flex items-center gap-2">
@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
           </h4>
 
           <h2 className="text-4xl font-bold text-black leading-tight">
-            We Have <span className="text-amber-800">5+ Years</span> Of
+            We Have <span className="text-amber-800">10+ Years</span> Of
             Experience <br /> With Nail Style.
           </h2>
 
@@ -72,7 +72,7 @@ const WhyChooseUs = () => {
             autoPlay
             muted
             loop
-            className="w-full h-[600px] object-cover"
+            className="w-full h-[500px] object-cover"
           />
         </div>
       </div>
