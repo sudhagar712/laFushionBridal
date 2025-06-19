@@ -16,6 +16,7 @@ import NailTreatments from "../Components/NailTreatments";
 
 import AboutPage from "./AboutPages";
 import BridalPackages from "../Components/BridalPackages";
+import TrialMakeupSection from "../Components/TrialMakeupSection";
 
 const LandingPage = () => {
   return (
@@ -24,6 +25,8 @@ const LandingPage = () => {
       <PhotographySection />
 
       <CategoryGrid />
+
+      <TrialMakeupSection/>
       
        <BridalPackages/>
 

@@ -26,14 +26,14 @@ const treatments = [
 
 const NailTreatments = () => {
   return (
-    <section className=" py-10 px-1 ">
+    <section className="md:py-10 md:px-5 mb-5 py-4 px-0">
       <div className="flex flex-col md:flex-row items-center gap-10">
         {/* Left Image */}
         <div className="md:w-1/2 ">
           <img
             src={nailImage}
             alt="Nail Treatments"
-            className="rounded-lg w-full h-[600px] md:h-[90vh] object-cover"
+            className="rounded-lg w-full h-[500px] md:h-[100vh] object-fit md:object-cover"
           />
         </div>
 
@@ -46,7 +46,7 @@ const NailTreatments = () => {
             Our Nails Treatments & Prices
           </h2>
 
-          <ul className="space-y-4">
+          <ul className="space-y-4 p-5">
             {treatments.map((item, index) => (
               <li key={index}>
                 <div className="flex justify-between items-center border-dotted border-b border-rose-300 pb-1">
