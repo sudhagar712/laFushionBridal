@@ -36,7 +36,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex gap-4 font-medium p-2 ">
+        {/* <nav className="hidden md:flex gap-4 font-medium p-2 ">
           {menuItems.map((item) =>
             item.name === "Services" ? (
               <div
@@ -89,15 +89,26 @@ const Navbar = () => {
               </Link>
             )
           )}
-        </nav>
+        </nav> */}
 
-        {/* Mobile Menu Icon */}
-        <button
-          className="md:hidden bg-yellow-400 p-1 px-2 border-2 border-white rounded-md shadow-2xl text-2xl"
-          onClick={() => setMenuOpen(true)}
-        >
-          <CgMenuRightAlt />
-        </button>
+        <div></div>
+
+        <div className="flex justify-center  gap-10 ">
+          <a href="tel:+919003545353">
+            {" "}
+            <button className="border-2 border-white px-3 py-2">
+              Lets Connect
+            </button>
+          </a>
+
+          {/* Mobile Menu Icon */}
+          <button
+            className=" bg-yellow-400  p-1 px-2 border-2 border-white rounded-md shadow-2xl text-2xl "
+            onClick={() => setMenuOpen(true)}
+          >
+            <CgMenuRightAlt />
+          </button>
+        </div>
       </div>
 
       {/* Mobile Offcanvas Menu */}
@@ -106,8 +117,9 @@ const Navbar = () => {
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex justify-between items-center p-4 border-b border-yellow-400">
-          <img src={logo} alt="logo" className="w-[120px]" />
+        <div className="flex justify-between items-center  p-4 border-b border-yellow-400">
+          <img src={logo} alt="logo" className="w-[120px] " />
+
           <button
             onClick={() => setMenuOpen(false)}
             className="text-xl text-white bg-yellow-400 p-2 shadow-2xl"

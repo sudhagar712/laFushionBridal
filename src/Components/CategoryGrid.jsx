@@ -48,7 +48,7 @@ const CategoryGrid = () => {
         </h3>
       </div>
 
-      <div className="grid grid-cols-1 p-2 md:px-[20px] md:grid-cols-3 lg:grid-cols-5 gap-5">
+      <div className="grid grid-cols-1 p-2 md:px-[20px] md:grid-cols-3 lg:grid-cols-3 gap-8">
         {categories.map((category, index) => (
           <Link to={category.link} key={index}>
             <div className="relative group h-[500px] overflow-hidden cursor-pointer rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">

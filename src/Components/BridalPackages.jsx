@@ -41,7 +41,7 @@ const BridalPackages = () => {
       <h2 className="text-3xl md:text-4xl font-semibold text-center border-b-2 border-yellow-500 pb-3 mb-8">
         Bridal Packages
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 md:px-9  text-center gap-3  mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:px-9  text-center gap-3  mx-auto">
         {bridalPackages.map((pkg, index) => (
           <div
             key={index}
@@ -50,7 +50,7 @@ const BridalPackages = () => {
             <img
               src={pkg.image}
               alt={`${pkg.title} main`}
-              className="w-full h-[300px] object-fit"
+              className="w-full h-[400px] object-cover "
             />
             <div className="p-4 text-center">
               <h3 className="text-lg font-semibold text-yellow-400">
