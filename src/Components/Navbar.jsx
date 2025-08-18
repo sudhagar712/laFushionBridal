@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed w-full px-5 py-1 top-0 left-0 z-50 md:p-5 mt-4 md:mt-0 md:px-10 transition-all duration-300 ${
+      className={`fixed w-full px-5 py-1 top-0 left-0 z-50 md:p-5 mt-1 md:mt-0 md:px-10 transition-all duration-300 ${
         isAtTop ? "bg-transparent text-white" : "hidden"
       }`}
     >
@@ -93,17 +93,17 @@ const Navbar = () => {
 
         <div></div>
 
-        <div className="flex justify-center  gap-10 ">
+        <div className="flex justify-center  gap-5 ">
           <a href="tel:+919003545353">
             {" "}
-            <button className="border-2 border-white px-3 py-2">
+            <button className="border-2 border-white md:px-3 p-1 px-2 md:py-2 text-[10px]">
               Lets Connect
             </button>
           </a>
 
           {/* Mobile Menu Icon */}
           <button
-            className=" bg-yellow-400  p-1 px-2 border-2 border-white rounded-md shadow-2xl text-2xl "
+            className="border-2 border-yellow-500 bg-white/50  py-2 shadow-md hover:bg-white/90 hover:text-gray-500    px-5  text-[10px] md:text-[18px]  transition"
             onClick={() => setMenuOpen(true)}
           >
             <CgMenuRightAlt />

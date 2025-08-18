@@ -22,15 +22,19 @@ const LandingPage = () => {
   return (
     <div>
       <Banner />
-      <PhotographySection />
 
-      <CategoryGrid />
+      <div className="">
+        <PhotographySection />
+      </div>
 
-      <BridalPackages />
+      <div>
+        <CategoryGrid />
+      </div>
 
       <PhotoGalleryWithModal />
+      <BridalPackages />
       <Carousel3D />
-    
+
       <NailTreatments />
       {/* <SpaBenefits /> */}
       <hr />

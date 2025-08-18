@@ -35,7 +35,7 @@ const PhotographySection = () => {
           </div>
 
           {/* Text */}
-          <div className="w-full lg:w-1/2 md:text-center lg:text-left">
+          <div className="w-full lg:w-1/2 md:text-center md:px-10 lg:text-left">
             <h3
               className="text-3xl md:text-6xl text-yellow-300 font-[Great Vibes] mb-2"
               style={{ fontFamily: "'Great Vibes', cursive" }}
@@ -146,7 +146,7 @@ const PhotographySection = () => {
             />
           </div>
           {/* Text */}
-          <div className="w-full lg:w-1/2 md:text-center lg:text-left">
+          <div className="w-full lg:w-1/2 md:text-center md:px-10 lg:text-left">
             <h3
               className="text-3xl md:text-6xl text-yellow-300 font-[Great Vibes] mb-2"
               style={{ fontFamily: "'Great Vibes', cursive" }}

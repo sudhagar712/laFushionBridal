@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const slides = [
   {
-    title: "Bridal MakeUp",
+    title: "MakeUp",
     description:
       "Magnis dis parturient montes nascetur ridiculus mus mauris vitae.",
     video: hair5,
@@ -30,13 +30,7 @@ const slides = [
     video: hair4,
     shop: "Pondicherry"
   },
-  {
-    title: "Traditional Bridal Makeup",
-    description:
-      "Magnis dis parturient montes nascetur ridiculus mus mauris vitae.",
-    video: hair8,
-    shop: "Pondicherry"
-  },
+  
 
   {
     title: "spa",
@@ -71,11 +65,11 @@ const Banner = () => {
   const { title, video, shop } = slides[current];
 
   return (
-    <section className="relative w-full md:h-[100vh] h-[40vh] overflow-hidden ">
+    <section className="relative w-full md:h-[100vh] h-[50vh] overflow-hidden ">
       {/* Video background */}
-      <div className="absolute inset-0 bg-black  w-full h-full z-10 mix-blend-multiply">
+      <div className="absolute inset-0 bg-black/60  w-full h-full z-10 mix-blend-multiply">
         {loading && (
-          <div className="absolute inset-0 flex items-center justify-center bg-black/70 z-10 backdrop-brightness-50">
+          <div className="absolute inset-0 flex items-center justify-center bg-black/90 z-10 backdrop-brightness-50">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-yellow-400"></div>
           </div>
         )}
@@ -93,7 +87,7 @@ const Banner = () => {
       </div>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/100 via-black/60 to-black/60 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black/50 z-10" />
 
       {/* Content */}
       <div className="relative z-20 mt-4   flex flex-col items-center justify-center h-full text-center text-white px-4">
@@ -106,14 +100,14 @@ const Banner = () => {
           </Link>
         </div> */}
 
-        <h1 className="text-[16px] sm:text-3xl md:text-7xl text-white  md:border-2 border-white md:px-3 md:p-3  font-serif  mb-2">
+        <h1 className="text-[16px] sm:text-3xl md:text-9xl text-yellow-500     md:px-3 md:p-3  font-serif  mb-2">
           {title}
         </h1>
         <p className="max-w-2xl mx-auto text-[12px] md:text-[15px] mb-5">
           {shop}
         </p>
         <a href="tel:+919003545353">
-          <button className="border-2 border-white bg-yellow-400  py-2    px-5  text-[10px] md:text-[18px]  transition">
+          <button className="border-2 border-yellow-500 bg-white/50  py-2 shadow-md hover:bg-white/90 hover:text-gray-500    px-5  text-[10px] md:text-[18px]  transition">
             <span>Book an Appointment</span>
           </button>
         </a>
