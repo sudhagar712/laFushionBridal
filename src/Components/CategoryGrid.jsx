@@ -49,10 +49,10 @@ const CategoryGrid = () => {
       </div>
 
       <div className="flex justify-center items-center">
-        <div className="grid grid-cols-1 p-2 w-[90%] md:px-[20px] md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 p-2 w-[90%] md:w-full md:px-[20px] md:grid-cols-2 lg:grid-cols-4 gap-8">
           {categories.map((category, index) => (
             <Link to={category.link} key={index}>
-              <div className="relative group h-[500px] md:h-[100vh] overflow-hidden cursor-pointer rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105">
+              <div className="relative group h-[500px]  md:h-[100vh] overflow-hidden cursor-pointer rounded-xl shadow-lg hover:shadow-3xl transition-transform transform hover:scale-110">
                 <video
                   src={category.video}
                   className="w-full h-full  object-cover md:object-cover"

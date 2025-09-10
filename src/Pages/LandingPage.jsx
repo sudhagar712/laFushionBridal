@@ -32,8 +32,9 @@ const LandingPage = () => {
       </div>
 
       <PhotoGalleryWithModal />
-      <BridalPackages />
+
       <Carousel3D />
+      <BridalPackages />
 
       <NailTreatments />
       {/* <SpaBenefits /> */}

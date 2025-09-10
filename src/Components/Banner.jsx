@@ -65,9 +65,9 @@ const Banner = () => {
   const { title, video, shop } = slides[current];
 
   return (
-    <section className="relative w-full md:h-[100vh] h-[50vh] overflow-hidden ">
+    <section className="relative md:bg-black/70   w-full md:h-[100vh] h-[50vh] overflow-hidden ">
       {/* Video background */}
-      <div className="absolute inset-0 bg-black/60  w-full h-full z-10 mix-blend-multiply">
+      <div className="absolute inset-0 bg-black/70  w-full h-full z-10 mix-blend-multiply">
         {loading && (
           <div className="absolute inset-0 flex items-center justify-center bg-black/90 z-10 backdrop-brightness-50">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-yellow-400"></div>

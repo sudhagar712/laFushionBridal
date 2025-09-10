@@ -24,7 +24,7 @@ const Carousel3D = () => {
       <h2 className="text-yellow-400  text-3xl md:text-6xl font-cursive text-center mb-12 drop-shadow-md">
         Fav Collection
       </h2>
-      <div className="max-w-7xl p-5   mx-auto relative">
+      <div className="max-w-7xl p-4  mx-auto relative">
         <Swiper
           modules={[Pagination, EffectCoverflow]}
           effect="coverflow"
@@ -49,7 +49,7 @@ const Carousel3D = () => {
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="rounded-md md:h-[400px]  overflow-hidden shadow-lg bg-white transition-all duration-300 hover:scale-[1.01]">
+              <div className="rounded-md  h-[400px]  shadow-2xl   overflow-hidden border-4 border-gray-200 bg-white transition-all duration-300 hover:scale-[1.01]">
                 <div className="aspect-video overflow-hidden">
                   <img
                     src={slide.image}
@@ -57,8 +57,8 @@ const Carousel3D = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-10 text-center">
-                  <h3 className="md:text-2xl sm:text-xl text-yellow-400 font-semibold">
+                <div className="p-10 mt-10 text-center">
+                  <h3 className="md:text-2xl sm:text-xl text-black font-semibold">
                     {slide.title}
                   </h3>
                 </div>

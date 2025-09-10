@@ -28,20 +28,16 @@ const bridalPackages = [
     tagline: "where intricate art comes to life with brilliance",
     image: star2Main
   },
-  {
-    title: "The Royal Bridal Package",
-    tagline: "where fairy tales are made",
-    image: royalMain
-  }
+ 
 ];
 
 const BridalPackages = () => {
   return (
-    <div className=" py-9 mt-3  px-5 text-yellow-500  font-bold ">
+    <div className=" py-9 mt-3  px-1 md:px-5 text-yellow-500  font-bold ">
       <h2 className="text-3xl md:text-4xl font-semibold text-center border-b-2 border-yellow-500 pb-3 mb-8">
         Bridal Packages
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-3 md:px-9  text-center gap-3  mx-auto">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  md:px-9  text-center gap-3  mx-auto">
         {bridalPackages.map((pkg, index) => (
           <div
             key={index}
@@ -50,13 +46,13 @@ const BridalPackages = () => {
             <img
               src={pkg.image}
               alt={`${pkg.title} main`}
-              className="w-full h-[400px] object-cover "
+              className="w-full h-[100px] md:h-[400px] object-cover "
             />
             <div className="p-4 text-center">
-              <h3 className="text-lg font-semibold text-yellow-400">
+              <h3 className="text-sm md:text-md font-semibold text-yellow-400">
                 {pkg.title}
               </h3>
-              <p className="text-sm mt-1 text-gray-500">{pkg.tagline}</p>
+              <p className="text-[10px] md:text-xl mt-1 text-gray-500">{pkg.tagline}</p>
             </div>
           </div>
         ))}

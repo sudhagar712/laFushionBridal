@@ -48,7 +48,7 @@ const PhotoGalleryWithModal = () => {
 
   return (
     <>
-      <section className="py-8 md:p-[50px] md:px-[50px]">
+      <section className="py-8 md:p-[30px] md:px-[4px]">
         {/* Heading */}
 
         <div className="relative overflow-hidden h-[100px] md:h-[200px] mb-2">
@@ -78,11 +78,11 @@ const PhotoGalleryWithModal = () => {
         </div>
 
         {/* Masonry Grid Layout */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:p-9 md:grid-cols-4 md:gap-6 gap-3  auto-rows-[-900px] md:auto-rows-[400px]">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:p-9 md:grid-cols-4 md:gap-6 gap-1  auto-rows-[-900px] md:auto-rows-[400px]">
           {images.map((img, idx) => (
             <div
               key={idx}
-              className={`${img.colSpan} ${img.rowSpan} cursor-pointer  overflow-hidden rounded-lg shadow hover:shadow-xl transition duration-300`}
+              className={`${img.colSpan} ${img.rowSpan} cursor-pointer  overflow-hidden rounded-lg shadow hover:shadow-2xl transition duration-300`}
               onClick={() => openModal(img.src)}
             >
               <img
