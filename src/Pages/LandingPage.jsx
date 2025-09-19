@@ -23,7 +23,7 @@ const LandingPage = () => {
     <div>
       <Banner />
 
-      <div className="">
+      <div className="md:px-[40px] md:p-10">
         <PhotographySection />
       </div>
 

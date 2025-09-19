@@ -4,7 +4,7 @@ import aboutVideo from "../assets/images/nailvideo.mp4";
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-yellow-400 py-16">
+    <section className="bg-pink-300 py-16">
       <div className="max-w-9xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
         {/* Left Side */}
         <div className="space-y-6">
