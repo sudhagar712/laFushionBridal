@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <header
-      className={`fixed w-full px-5 py-1 top-0 left-0 z-50 md:p-5 mt-1 md:mt-0 md:px-10 transition-all duration-300 ${
+      className={`fixed w-full px-5 py-1 top-0 left-0 z-50 md:p-5   transition-all duration-300 ${
         isAtTop ? "bg-transparent text-white" : "hidden"
       }`}
     >
@@ -36,11 +36,11 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        {/* <nav className="hidden md:flex gap-4 font-medium p-2 ">
+        <nav className="hidden md:flex gap-4 font-medium p-2 ">
           {menuItems.map((item) =>
             item.name === "Services" ? (
               <div
-                className="relative group border border-white hover:bg-yellow-400 md:p-2  px-3 py-1"
+                className="relative group  hover:bg-yellow-400 md:p-2  px-3 py-1"
                 key={item.name}
               >
                 <span className=" cursor-pointer transition duration-200">
@@ -83,13 +83,13 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className="border border-white hover:bg-yellow-400 md:p-2 md:px-5 py-1   transition duration-200"
+                className=" hover:bg-yellow-400 md:p-2 md:px-5 py-1   transition duration-200"
               >
                 {item.name}
               </Link>
             )
           )}
-        </nav> */}
+        </nav>
 
         <div></div>
 
@@ -103,7 +103,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Icon */}
           <button
-            className="border-2 border-yellow-500 bg-white/50  py-2 shadow-md hover:bg-white/90 hover:text-gray-500    px-5  text-[10px] md:text-[18px]  transition"
+            className="border-2 border-yellow-500 bg-white/50 md:hidden  py-2 shadow-md hover:bg-white/90 hover:text-gray-500    px-5  text-[10px] md:text-[18px]  transition"
             onClick={() => setMenuOpen(true)}
           >
             <CgMenuRightAlt />
@@ -113,7 +113,7 @@ const Navbar = () => {
 
       {/* Mobile Offcanvas Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-[100%] sm:w-[50%] bg-black bg-opacity-50 backdrop-blur-md text-white transform transition-transform duration-300 z-50 ${
+        className={`fixed top-0  right-0 h-full w-[100%] sm:w-[50%] bg-black bg-opacity-50 backdrop-blur-md text-white transform transition-transform duration-300 z-50 ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -121,7 +121,7 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="w-[120px] " />
 
           <button
-            onClick={() => setMenuOpen(false)}
+            onClick={() => setMenuOpen(false)}  
             className="text-xl text-white bg-yellow-400 p-2 shadow-2xl"
           >
             <FiX />

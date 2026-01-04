@@ -54,7 +54,7 @@ const App = () => {
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black/70 z-10" />
 
           {/* Loader content */}
-          <div className="relative z-20 flex flex-col items-center justify-center h-full text-white px-4 text-center">
+          <div className="relative z-20 flex flex-col items-center justify-center h-full text-white text-center">
             <img
               src={logo}
               alt="logo"

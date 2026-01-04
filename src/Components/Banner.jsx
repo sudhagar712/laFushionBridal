@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import logo from "../assets/images/logo.png";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import hair4 from "../assets/images/angelvd.mp4";
-import hair5 from "../assets/images/bridewed2.mp4";
+import hair5 from "../assets/images/bridewed2.webm";
 import hair6 from "../assets/images/ban1.mp4";
-import hair7 from "../assets/images/spanew.mp4";
-import hair8 from "../assets/images/hande.mp4";
+import hair7 from "../assets/images/spanew.webm";
+
 import { Link } from "react-router-dom";
 
 const slides = [
@@ -65,7 +64,7 @@ const Banner = () => {
   const { title, video, shop } = slides[current];
 
   return (
-    <section className="relative md:bg-black/30  transition-all duration-400  w-full md:h-[100vh] h-[50vh] overflow-hidden ">
+    <section className="relative md:bg-black/40  transition-all duration-400  w-full md:h-[100vh] h-screen overflow-hidden ">
       {/* Video background */}
       <div className="absolute inset-0 bg-white  w-full h-full z-10 mix-blend-multiply">
         {loading && (
@@ -75,7 +74,7 @@ const Banner = () => {
         )}
         <video
           key={video}
-          className="w-full h-full px-2 p-2  mt-1 object-cover"
+          className="w-full h-full object-cover"
           src={video}
           autoPlay
           loop
